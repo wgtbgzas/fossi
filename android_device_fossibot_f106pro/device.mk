@@ -14,8 +14,10 @@ PRODUCT_PACKAGES += \
 
 # Rootdir
 PRODUCT_PACKAGES += \
-    init.f106pro.rc \
     init.sku.rc
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/rootdir/etc/init.f106pro.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.f106pro.rc
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
