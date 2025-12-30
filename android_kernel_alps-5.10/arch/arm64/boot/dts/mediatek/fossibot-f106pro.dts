@@ -1,0 +1,9 @@
+// SPDX-License-Identifier: GPL-2.0
+/dts-v1/;
+
+#include "mt6768.dts"
+
+/ {
+	model = "Fossibot F106 Pro";
+	compatible = "fossibot,f106pro", "mediatek,mt6768";
+};
