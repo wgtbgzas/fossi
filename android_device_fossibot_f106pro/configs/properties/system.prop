@@ -1,0 +1,14 @@
+# Audio
+ro.audio.monitorRotation=true
+
+# Bluetooth
+vendor.bluetooth.lhdc_codec.supported=true
+persist.bluetooth.lhdc_codec.enabled=true
+
+# Product
+ro.product.hardware=g2306dmd_v1_gc_qc_f06pro_k5_u
+ro.product.display=F106 Pro
+
+# Wifi
+persist.jcf.ft.sar=true
+persist.vendor.mtk_rtt_support=1

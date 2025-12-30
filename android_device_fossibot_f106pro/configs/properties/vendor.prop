@@ -1,0 +1,24 @@
+# Audio
+ro.vendor.audio_user_parameter=20240110
+ro.vendor.audio_factory_parameter=20230911
+
+# CPU
+persist.vendor.duraspeed.support=1
+persist.vendor.duraspeed.app.on=1
+persist.vendor.duraspeed.lowmemory.enable=1
+
+# Display
+ro.surface_flinger.enable_frame_rate_override=true
+ro.surface_flinger.set_idle_timer_ms=250
+ro.surface_flinger.set_touch_timer_ms=1000
+ro.surface_flinger.use_content_detection_for_refresh_rate=true
+ro.surface_flinger.use_color_management=true
+ro.surface_flinger.protected_contents=true
+ro.vendor.mtk_aal_support=1
+
+# Storage
+ro.vendor.efuse_writer_enable=1
+
+# Wifi
+ro.vendor.mtk_wapi_support=1
+
