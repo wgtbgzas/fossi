@@ -1,0 +1,2 @@
+real[[:space:]]fossibot/vendor.img filter=lfs diff=lfs merge=lfs -text
+real[[:space:]]fossibot/vendor_boot.img filter=lfs diff=lfs merge=lfs -text
