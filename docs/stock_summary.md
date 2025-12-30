@@ -5,10 +5,10 @@ Source files:
 - `real fossibot/fstab.mt6768`
 - `real fossibot/props.txt`
 - `real fossibot/boot.img`
+- `real fossibot/vendor_boot.img`
 - `real fossibot/dtbo.img`
 Derived via local parsing of `boot.img` header and `strings` scans of `dtbo.img` (outputs were not committed).
-
-> Note: `real fossibot/vendor_boot.img` is currently a Git LFS pointer (size 133 bytes), and `git lfs pull` failed due to no remote. Vendor boot cmdline could not be extracted from stock at this time.
+Vendor boot details below were extracted locally from the stock `vendor_boot.img` (outputs were not committed).
 
 ## Dynamic partitions (from `lpdump_super.txt`)
 - **Metadata**: version 10.2, slot count 3, header flags `virtual_ab_device`.
@@ -86,11 +86,17 @@ Derived via local parsing of `boot.img` header and `strings` scans of `dtbo.img`
 
 ## Kernel cmdline (stock boot header)
 - `boot.img` header version: **4** (boot image v4 style) with **empty cmdline** (`""`).
-- Vendor boot cmdline could not be extracted because `vendor_boot.img` is currently an LFS pointer.
+- `vendor_boot.img` header version: **4**, page size **4096**, cmdline: `bootopt=64S3,32N2,64N2`.
+
+## Vendor ramdisk (from `vendor_boot.img`)
+- Vendor ramdisk format: **LZ4 legacy** (uncompressed size **3,464,627 bytes**).
+- Extracted files (no other `fstab*`, `init*.rc`, or `ueventd*` present):
+  - `first_stage_ramdisk/fstab.mt6768`
 
 ## AVB / verity hints
-- fstab entries for `/system`, `/system_ext`, `/product`, `/vendor` are `ro` and have **AVB** enabled (`avb`/`avb=vbmeta_system`).
+- Vendor ramdisk fstab entries for `/system`, `/system_ext`, `/product`, `/vendor` are `ro` and have **AVB** enabled (`avb`/`avb=vbmeta_system`).
 - `vbmeta_system` is mounted with `avb=vbmeta` and `first_stage_mount`.
+- Vendor ramdisk fstab for `/data` uses `inlinecrypt` and `fileencryption=aes-256-xts:aes-256-cts:v2` with `keydirectory=/metadata/vold/metadata_encryption`.
 - `props.txt` shows:
   - `ro.boot.avb_version = 1.2`
   - `ro.boot.verifiedbootstate = orange`
