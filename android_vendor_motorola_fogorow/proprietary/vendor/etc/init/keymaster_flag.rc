@@ -1,5 +1,0 @@
-service keymaster_flag /vendor/bin/keymaster_flag
-    class late_start
-    user system
-    group system
-    oneshot
