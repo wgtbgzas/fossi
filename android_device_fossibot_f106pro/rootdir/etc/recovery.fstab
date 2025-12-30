@@ -1,0 +1,19 @@
+# TWRP fstab for Fossibot F106 Pro
+
+system /system ext4 ro wait,slotselect,avb=vbmeta_system,logical,first_stage_mount,avb_keys=/avb/q-gsi.avbpubkey:/avb/r-gsi.avbpubkey:/avb/s-gsi.avbpubkey,flags=display="System";backup=1
+system_ext /system_ext ext4 ro wait,slotselect,avb=vbmeta_system,logical,first_stage_mount,avb_keys=/avb/q-gsi.avbpubkey:/avb/r-gsi.avbpubkey:/avb/s-gsi.avbpubkey,flags=display="System Ext";backup=1
+vendor /vendor ext4 ro wait,slotselect,avb,logical,first_stage_mount,flags=display="Vendor";backup=1
+product /product ext4 ro wait,slotselect,avb,logical,first_stage_mount,flags=display="Product";backup=1
+
+/dev/block/by-name/md_udc /metadata ext4 noatime,nosuid,nodev,discard wait,check,formattable,first_stage_mount,flags=display="Metadata"
+/dev/block/by-name/userdata /data f2fs noatime,nosuid,nodev,discard,noflush_merge,fsync_mode=nobarrier,reserve_root=134217,resgid=1065,inlinecrypt wait,check,formattable,quota,latemount,resize,readahead_size_kb=512,reservedsize=128m,checkpoint=fs,fileencryption=aes-256-xts:aes-256-cts:v2,keydirectory=/metadata/vold/metadata_encryption,flags=display="Data";backup=1
+
+/dev/block/by-name/boot /boot emmc defaults slotselect,flags=display="Boot";backup=1
+/dev/block/by-name/vendor_boot /vendor_boot emmc defaults slotselect,flags=display="Vendor Boot";backup=1
+/dev/block/by-name/dtbo /dtbo emmc defaults slotselect,flags=display="DTBO";backup=1
+/dev/block/by-name/vbmeta /vbmeta emmc defaults slotselect,flags=display="VBMeta";backup=1
+/dev/block/by-name/vbmeta_system /vbmeta_system emmc defaults slotselect,flags=display="VBMeta System";backup=1
+/dev/block/by-name/vbmeta_vendor /vbmeta_vendor emmc defaults slotselect,flags=display="VBMeta Vendor";backup=1
+
+/devices/platform/11240000.mmc* /external_sd auto defaults voldmanaged=sdcard1:auto,encryptable=userdata,flags=display="MicroSD";storage
+/devices/platform/mt_usb* /usb-otg vfat defaults voldmanaged=usbotg:auto,flags=display="USB OTG";storage
