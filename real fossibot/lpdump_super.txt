@@ -1,0 +1,82 @@
+Slot 0:
+Metadata version: 10.2
+Metadata size: 1000 bytes
+Metadata max size: 65536 bytes
+Metadata slot count: 3
+Header flags: virtual_ab_device
+Partition table:
+------------------------
+  Name: product_a
+  Group: main_a
+  Attributes: readonly
+  Extents:
+    0 .. 5006575 linear super 2048
+------------------------
+  Name: product_b
+  Group: main_b
+  Attributes: readonly
+  Extents:
+------------------------
+  Name: system_a
+  Group: main_a
+  Attributes: readonly
+  Extents:
+    0 .. 2295671 linear super 5009408
+------------------------
+  Name: system_b
+  Group: main_b
+  Attributes: readonly
+  Extents:
+    0 .. 104663 linear super 7305216
+------------------------
+  Name: system_ext_a
+  Group: main_a
+  Attributes: readonly
+  Extents:
+    0 .. 1806647 linear super 7411712
+------------------------
+  Name: system_ext_b
+  Group: main_b
+  Attributes: readonly
+  Extents:
+------------------------
+  Name: vendor_a
+  Group: main_a
+  Attributes: readonly
+  Extents:
+    0 .. 980831 linear super 9220096
+------------------------
+  Name: vendor_b
+  Group: main_b
+  Attributes: readonly
+  Extents:
+------------------------
+Super partition layout:
+------------------------
+super: 2048 .. 5008624: product_a (5006576 sectors)
+super: 5009408 .. 7305080: system_a (2295672 sectors)
+super: 7305216 .. 7409880: system_b (104664 sectors)
+super: 7411712 .. 9218360: system_ext_a (1806648 sectors)
+super: 9220096 .. 10200928: vendor_a (980832 sectors)
+------------------------
+Block device table:
+------------------------
+  Partition name: super
+  First sector: 2048
+  Size: 8589934592 bytes
+  Flags: none
+------------------------
+Group table:
+------------------------
+  Name: default
+  Maximum size: 0 bytes
+  Flags: none
+------------------------
+  Name: main_a
+  Maximum size: 8587837440 bytes
+  Flags: none
+------------------------
+  Name: main_b
+  Maximum size: 8587837440 bytes
+  Flags: none
+------------------------

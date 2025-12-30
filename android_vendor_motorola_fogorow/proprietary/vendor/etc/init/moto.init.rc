@@ -1,0 +1,11 @@
+# TN Begin modify by dongwei.lv 20231027 EKFOGO4G-4176
+on early-init
+   exec u:r:vendor_modprobe:s0 -- /vendor/bin/modprobe -r -d /vendor/lib/modules zram
+
+on late-init
+   exec u:r:vendor_modprobe:s0 -- /vendor/bin/modprobe -a -d /vendor/lib/modules moto_mm_perf moto_swap_perf
+
+on property:sys.boot_completed=1
+   exec u:r:vendor_modprobe:s0 -- /vendor/bin/modprobe -a -d /vendor/lib/modules moto_mmap
+
+# TN End modify by dongwei.lv 20231027 EKFOGO4G-4176

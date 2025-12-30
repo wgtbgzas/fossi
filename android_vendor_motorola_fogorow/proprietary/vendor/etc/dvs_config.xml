@@ -1,0 +1,38 @@
+<Config>
+    <Item>
+        <key>DvsParam</key>
+        <value>{
+            "camts": 0,
+            "rs_readout": 18.0904,
+            "N": 9546,
+            "scale": 0.8,
+            "smooth": 0.001,
+            "threshold1": 3,
+            "threshold2": 2.0,
+            "threshold3": 1.0,
+            "threshold4": 1.0,
+            "rs_rows_n": 21,
+            "crop": 0.3,
+            "dataflag": 1,
+            "strideflag": 1,
+            "lamr": 0.5,
+            "filters": ["FilterRS","FilterPose","FilterSteadyGL","FilterPostprocess"],
+            "fx": 1579.89012056,
+            "fy": 1583.94355959,
+            "cx": 962.4245683,
+            "cy": 526.47169428,
+            "tf11": 0.0,
+            "tf12": -0.9985698631102059,
+            "tf13": 0.052051995297966155,
+            "tf21": -0.9995188290466858,
+            "tf22": -0.010692959782448996,
+            "tf23": 0.02911650721212499,
+            "tf31": -0.02851827672874158,
+            "tf32": -0.0,
+            "tf33": -0.9982198248849132,
+            "notimeDiff":false,
+            "key": "MOTO fogo4g"
+            }
+        </value>
+    </Item>
+</Config>
