@@ -58,8 +58,10 @@ PRODUCT_COPY_FILES += \
     vendor/fossibot/f106pro/proprietary/vendor/bin/fpc_tee_test:$(TARGET_COPY_OUT_VENDOR)/bin/fpc_tee_test \
     vendor/fossibot/f106pro/proprietary/vendor/bin/fuelgauged_nvram:$(TARGET_COPY_OUT_VENDOR)/bin/fuelgauged_nvram \
     vendor/fossibot/f106pro/proprietary/vendor/bin/gsm0710muxd:$(TARGET_COPY_OUT_VENDOR)/bin/gsm0710muxd \
+    vendor/fossibot/f106pro/proprietary/vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service-moto:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.biometrics.fingerprint@2.1-service-moto \
     vendor/fossibot/f106pro/proprietary/vendor/bin/hw/android.hardware.keymaster@4.1-service.trustonic:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.keymaster@4.1-service.trustonic \
     vendor/fossibot/f106pro/proprietary/vendor/bin/hw/android.hardware.secure_element@1.2-service-mediatek:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.secure_element@1.2-service-mediatek \
+    vendor/fossibot/f106pro/proprietary/vendor/bin/hw/motorola.hardware.fdrcontrol@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/motorola.hardware.fdrcontrol@1.0-service \
     vendor/fossibot/f106pro/proprietary/vendor/bin/hw/vendor.dolby.hardware.dms@2.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.dolby.hardware.dms@2.0-service \
     vendor/fossibot/f106pro/proprietary/vendor/bin/hw/vendor.dolby.media.c2@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.dolby.media.c2@1.0-service \
     vendor/fossibot/f106pro/proprietary/vendor/bin/hw/vendor.mediatek.hardware.nwk_opt@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.mediatek.hardware.nwk_opt@1.0-service \
@@ -163,6 +165,8 @@ PRODUCT_COPY_FILES += \
     vendor/fossibot/f106pro/proprietary/vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_Verizon_Wireless.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/carrier/agps_profiles_conf2_carrier_Verizon_Wireless.xml \
     vendor/fossibot/f106pro/proprietary/vendor/etc/init/init.md_apps.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.md_apps.rc \
     vendor/fossibot/f106pro/proprietary/vendor/etc/init/keymaster_flag.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/keymaster_flag.rc \
+    vendor/fossibot/f106pro/proprietary/vendor/etc/init/moto.init.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/moto.init.rc \
+    vendor/fossibot/f106pro/proprietary/vendor/etc/init/motorola.hardware.fdrcontrol@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/motorola.hardware.fdrcontrol@1.0-service.rc \
     vendor/fossibot/f106pro/proprietary/vendor/etc/init/networksetting.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/networksetting.rc \
     vendor/fossibot/f106pro/proprietary/vendor/etc/init/vendor.mediatek.hardware.nwk_opt@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.nwk_opt@1.0-service.rc \
     vendor/fossibot/f106pro/proprietary/vendor/etc/ipsec/ipsec.d/cacerts/GoDaddyRootCertificateAuthorityG2.crt:$(TARGET_COPY_OUT_VENDOR)/etc/ipsec/ipsec.d/cacerts/GoDaddyRootCertificateAuthorityG2.crt \
@@ -226,6 +230,7 @@ PRODUCT_COPY_FILES += \
     vendor/fossibot/f106pro/proprietary/vendor/lib/hw/audio.primary.mt6768.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/audio.primary.mt6768.so \
     vendor/fossibot/f106pro/proprietary/vendor/lib/hw/kmsetkey.default.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/kmsetkey.default.so \
     vendor/fossibot/f106pro/proprietary/vendor/lib/hw/kmsetkey.trustonic.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/kmsetkey.trustonic.so \
+    vendor/fossibot/f106pro/proprietary/vendor/lib/hw/motorola.hardware.fdrcontrol@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/motorola.hardware.fdrcontrol@1.0-impl.so \
     vendor/fossibot/f106pro/proprietary/vendor/lib/hw/vendor.mediatek.hardware.nvram@1.1-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.mediatek.hardware.nvram@1.1-impl.so \
     vendor/fossibot/f106pro/proprietary/vendor/lib/hw/vendor.mediatek.hardware.pq@2.15-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.mediatek.hardware.pq@2.15-impl.so \
     vendor/fossibot/f106pro/proprietary/vendor/lib/libQstAlgo_Nfc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libQstAlgo_Nfc.so \
@@ -282,6 +287,7 @@ PRODUCT_COPY_FILES += \
     vendor/fossibot/f106pro/proprietary/vendor/lib/libvolte_xdmc_shr.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvolte_xdmc_shr.so \
     vendor/fossibot/f106pro/proprietary/vendor/lib/libvpudv3a_vcodec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvpudv3a_vcodec.so \
     vendor/fossibot/f106pro/proprietary/vendor/lib/libwo.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwo.so \
+    vendor/fossibot/f106pro/proprietary/vendor/lib/motorola.hardware.fdrcontrol@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/motorola.hardware.fdrcontrol@1.0.so \
     vendor/fossibot/f106pro/proprietary/vendor/lib/s5k4h7_mipi_raw_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib/s5k4h7_mipi_raw_tuning.so \
     vendor/fossibot/f106pro/proprietary/vendor/lib/soundfx/libdlbvol.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libdlbvol.so \
     vendor/fossibot/f106pro/proprietary/vendor/lib/soundfx/libmsstwrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libmsstwrapper.so \
@@ -298,6 +304,7 @@ PRODUCT_COPY_FILES += \
     vendor/fossibot/f106pro/proprietary/vendor/lib64/hw/hwcomposer.mt6768.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/hwcomposer.mt6768.so \
     vendor/fossibot/f106pro/proprietary/vendor/lib64/hw/kmsetkey.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/kmsetkey.default.so \
     vendor/fossibot/f106pro/proprietary/vendor/lib64/hw/kmsetkey.trustonic.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/kmsetkey.trustonic.so \
+    vendor/fossibot/f106pro/proprietary/vendor/lib64/hw/motorola.hardware.fdrcontrol@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/motorola.hardware.fdrcontrol@1.0-impl.so \
     vendor/fossibot/f106pro/proprietary/vendor/lib64/hw/sensors.mt6768.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/sensors.mt6768.so \
     vendor/fossibot/f106pro/proprietary/vendor/lib64/hw/vendor.mediatek.hardware.camera.isphal@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.mediatek.hardware.camera.isphal@1.0-impl.so \
     vendor/fossibot/f106pro/proprietary/vendor/lib64/hw/vendor.mediatek.hardware.nvram@1.1-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.mediatek.hardware.nvram@1.1-impl.so \
@@ -462,6 +469,7 @@ PRODUCT_COPY_FILES += \
     vendor/fossibot/f106pro/proprietary/vendor/lib64/libvia-ril.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvia-ril.so \
     vendor/fossibot/f106pro/proprietary/vendor/lib64/libviamipc-ril.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libviamipc-ril.so \
     vendor/fossibot/f106pro/proprietary/vendor/lib64/libwo.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwo.so \
+    vendor/fossibot/f106pro/proprietary/vendor/lib64/motorola.hardware.fdrcontrol@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/motorola.hardware.fdrcontrol@1.0.so \
     vendor/fossibot/f106pro/proprietary/vendor/lib64/mtkcam/libmtkcam_streaminfo_plugin-p1stt.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mtkcam/libmtkcam_streaminfo_plugin-p1stt.so \
     vendor/fossibot/f106pro/proprietary/vendor/lib64/nwk_opt_imp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/nwk_opt_imp.so \
     vendor/fossibot/f106pro/proprietary/vendor/lib64/s5k3p9sp_mipi_raw_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/s5k3p9sp_mipi_raw_IdxMgr.so \
@@ -487,4 +495,5 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     com.fingerprints.extension \
     manifest_media_c2_V1_2_default.xml \
+    motorola.hardware.fdrcontrol@1.0.xml \
     vendor.dolby.media.c2@1.0-service.xml
