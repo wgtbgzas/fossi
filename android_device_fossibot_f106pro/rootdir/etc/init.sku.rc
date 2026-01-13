@@ -1,0 +1,18 @@
+on boot && property:ro.boot.product.hardware.sku=nfc_ss
+    start vendor.nfc_hal_service
+on boot && property:ro.boot.product.hardware.sku=nfc_dsds
+    start vendor.nfc_hal_service
+
+on fs
+    chmod 0660 /dev/pn553
+    chown nfc nfc /dev/pn553
+
+on post-fs-data
+    mkdir /data/vendor 0777 nfc nfc
+    mkdir /data/vendor/nfc 0777 nfc nfc
+    mkdir /data/vendor/nfc/param 0777 nfc nfc
+
+on post-fs-data
+    mkdir /data/vendor/secure_element 0777  secure_element secure_element
+    chmod 0660 /dev/p73
+    chown secure_element secure_element /dev/p73

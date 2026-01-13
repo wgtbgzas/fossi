@@ -6,6 +6,6 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifneq ($(filter penangf fogorow f106pro,$(TARGET_DEVICE)),)
-include $(call all-makefiles-under,$(LOCAL_PATH))
+ifeq ($(TARGET_DEVICE),f106pro)
+include $(call all-subdir-makefiles,$(LOCAL_PATH))
 endif
