@@ -14,10 +14,10 @@
 // limitations under the License.
 
 cc_binary {
-    name: "android.hardware.lights-service.mt6768-moto",
+    name: "android.hardware.lights-service.mt6768-fossibot",
     relative_install_path: "hw",
-    init_rc: ["android.hardware.lights.mt6768-moto.rc"],
-    vintf_fragments: ["android.hardware.lights.mt6768-moto.xml"],
+    init_rc: ["android.hardware.lights.mt6768-fossibot.rc"],
+    vintf_fragments: ["android.hardware.lights.mt6768-fossibot.xml"],
     vendor: true,
     shared_libs: [
         "libbase",

@@ -1,4 +1,4 @@
-# Unpinned blobs from fogorow_g-user 14 UTAS34.82-97-3 82-97-3 release-keys
+# Unpinned blobs from F106_Pro_ROW-user 14 UP1A.231005.007 2024134 release-keys
 
 # AEE
 vendor/lib/libaedv.so
@@ -241,7 +241,6 @@ vendor/lib64/liboemcrypto.so
 vendor/lib64/libtlcWidevineModularDrm.so
 
 # Fingerprint
-vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service:vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service-moto
 vendor/bin/fpc_tee_test
 vendor/framework/com.fingerprints.extension.jar
 vendor/lib64/hw/fpc.fingerprint.default.so
@@ -363,7 +362,6 @@ vendor/lib64/libhdrvideo.so
 
 # Misc
 vendor/bin/tlcKeyboxSample
-vendor/etc/init/moto.init.rc
 vendor/etc/AW_DSP.bin
 vendor/etc/AW_SINWAVE_DSP.bin
 vendor/lib/libdapparamstorage.so
@@ -373,15 +371,6 @@ vendor/lib64/libdlbac4_oem.so
 vendor/lib64/libem_sensor_jni.so
 vendor/lib64/libpixsmart_vs.so
 vendor/lib64/libpixsmart_vs_pose.so
-
-# Motorola
-vendor/bin/hw/motorola.hardware.fdrcontrol@1.0-service
-vendor/etc/init/motorola.hardware.fdrcontrol@1.0-service.rc
-vendor/etc/vintf/manifest/motorola.hardware.fdrcontrol@1.0.xml
-vendor/lib/hw/motorola.hardware.fdrcontrol@1.0-impl.so
-vendor/lib/motorola.hardware.fdrcontrol@1.0.so
-vendor/lib64/hw/motorola.hardware.fdrcontrol@1.0-impl.so
-vendor/lib64/motorola.hardware.fdrcontrol@1.0.so
 
 # Netd daemon
 vendor/etc/init/networksetting.rc

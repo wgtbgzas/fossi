@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_fogorow.mk
+    $(LOCAL_DIR)/lineage_F106_Pro.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_fogorow-user \
-    lineage_fogorow-userdebug \
-    lineage_fogorow-eng
+    lineage_F106_Pro-user \
+    lineage_F106_Pro-userdebug \
+    lineage_F106_Pro-eng

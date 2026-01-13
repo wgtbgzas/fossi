@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-#define LOG_TAG "android.hardware.lights-service.mt6768-moto"
+#define LOG_TAG "android.hardware.lights-service.mt6768-fossibot"
 
 #include "Lights.h"
 #include <android-base/file.h>

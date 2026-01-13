@@ -1,4 +1,4 @@
-service vendor.light /vendor/bin/hw/android.hardware.lights-service.mt6768-moto
+service vendor.light /vendor/bin/hw/android.hardware.lights-service.mt6768-fossibot
     class hal
     user system
     group system

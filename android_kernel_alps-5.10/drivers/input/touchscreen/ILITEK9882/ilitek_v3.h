@@ -93,7 +93,7 @@
 #define DRIVER_VERSION			"3.0.4.0.200801"
 
 /* Options */
-#define TDDI_INTERFACE			BUS_SPI /* BUS_I2C(0x18) or BUS_SPI(0x1C) */
+#define TDDI_INTERFACE			BUS_I2C /* BUS_I2C(0x18) or BUS_SPI(0x1C) */
 #define VDD_VOLTAGE			1800000
 #define VCC_VOLTAGE			1800000
 #define SPI_CLK                         2      /* follow by clk list */
