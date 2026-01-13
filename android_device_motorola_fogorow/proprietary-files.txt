@@ -1,4 +1,4 @@
-# Unpinned blobs from fogorow_g-user 14 UTAS34.82-97-3 82-97-3 release-keys
+# Unpinned blobs from FOSSiBOT F106 Pro (F106_Pro-user 14 UP1A.231005.007 2024134)
 
 # AEE
 vendor/lib/libaedv.so
