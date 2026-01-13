@@ -235,7 +235,7 @@ PRODUCT_PACKAGES += \
 
 # Light
 PRODUCT_PACKAGES += \
-    android.hardware.lights-service.mt6768-moto
+    android.hardware.lights-service.mt6768-fossibot
 
 # Media
 PRODUCT_PACKAGES += \

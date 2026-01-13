@@ -6,6 +6,6 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifeq ($(TARGET_DEVICE),fogorow)
+ifeq ($(TARGET_DEVICE),F106_Pro)
 include $(call all-subdir-makefiles,$(LOCAL_PATH))
 endif
