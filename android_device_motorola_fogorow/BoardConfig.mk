@@ -4,8 +4,8 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-DEVICE_PATH := device/motorola/fogorow
-KERNEL_PATH := device/motorola/fogorow-kernel
+DEVICE_PATH := device/fossibot/f106pro
+KERNEL_PATH := device/fossibot/f106pro-kernel
 
 # Inherit from mt6768-common
 -include device/motorola/mt6768-common/BoardConfigCommon.mk
@@ -14,7 +14,7 @@ KERNEL_PATH := device/motorola/fogorow-kernel
 BOARD_PREBUILT_DTBIMAGE_DIR := $(KERNEL_PATH)/dtb
 BOARD_MKBOOTIMG_ARGS += --dtb $(BOARD_PREBUILT_DTBIMAGE_DIR)/dtb.img
 
-TARGET_KERNEL_SOURCE := device/motorola/fogorow-kernel/kernel-headers
+TARGET_KERNEL_SOURCE := device/fossibot/f106pro-kernel/kernel-headers
 
 LOCAL_KERNEL := $(KERNEL_PATH)/$(BOARD_KERNEL_IMAGE_NAME)
 PRODUCT_COPY_FILES += \
@@ -53,4 +53,4 @@ ODM_MANIFEST_NONFC_DSDS_FILES := $(DEVICE_PATH)/configs/vintf/sku/manifest_nonfc
 ODM_MANIFEST_NFC_DSDS_FILES := $(DEVICE_PATH)/configs/vintf/sku/manifest_nfc_dsds.xml
 
 # Inherit the proprietary files
-include vendor/motorola/fogorow/BoardConfigVendor.mk
+include vendor/fossibot/f106pro/BoardConfigVendor.mk
