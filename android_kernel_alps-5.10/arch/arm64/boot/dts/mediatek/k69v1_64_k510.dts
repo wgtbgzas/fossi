@@ -306,5 +306,5 @@
 
 #include <k69v1_64_k510/cust.dtsi>
 #include "mediatek/cust_mt6768_camera.dtsi"
-#include "mediatek/cust_mt6768_touch_1080x2160.dtsi"
+#include "mediatek/cust_mt6768_touch_ilitek_1080x2408.dtsi"
 /*End of this file, DO NOT ADD ANYTHING HERE*/
