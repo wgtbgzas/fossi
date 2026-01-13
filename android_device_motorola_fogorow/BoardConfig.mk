@@ -11,6 +11,8 @@ KERNEL_PATH := device/fossibot/f106pro-kernel
 -include device/motorola/mt6768-common/BoardConfigCommon.mk
 
 # Kernel
+KERNEL_DEFCONFIG := f106pro_defconfig
+KERNEL_BUILD_CONFIG := build.config.mtk.aarch64
 BOARD_PREBUILT_DTBIMAGE_DIR := $(KERNEL_PATH)/dtb
 BOARD_MKBOOTIMG_ARGS += --dtb $(BOARD_PREBUILT_DTBIMAGE_DIR)/dtb.img
 
