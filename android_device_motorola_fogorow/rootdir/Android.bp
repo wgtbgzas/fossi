@@ -6,8 +6,8 @@
 
 // Init configuration files
 prebuilt_etc {
-    name: "init.fogorow.rc",
-    src: "etc/init.fogorow.rc",
+    name: "init.f106pro.rc",
+    src: "etc/init.f106pro.rc",
     sub_dir: "init/hw",
     vendor: true,
 }

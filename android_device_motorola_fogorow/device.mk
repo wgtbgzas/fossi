@@ -14,7 +14,7 @@ PRODUCT_PACKAGES += \
 
 # Rootdir
 PRODUCT_PACKAGES += \
-    init.fogorow.rc \
+    init.f106pro.rc \
     init.sku.rc
 
 # Soong namespaces
