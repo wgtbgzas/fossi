@@ -13,8 +13,8 @@ fi
 
 set -e
 
-export DEVICE=fogorow
+export DEVICE=F106_Pro
 export DEVICE_COMMON=mt6768-common
-export VENDOR=motorola
+export VENDOR=fossibot
 
 "./../../${VENDOR}/${DEVICE_COMMON}/extract-files.sh" "$@"
