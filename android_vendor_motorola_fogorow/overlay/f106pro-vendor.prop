@@ -1,0 +1,7 @@
+# FOSSiBOT F106 Pro vendor properties (from real_fossibot/props.txt)
+ro.vendor.build.fingerprint=FOSSiBOT/F106_Pro_ROW/F106_Pro:14/UP1A.231005.007/2024134:user/release-keys
+ro.vendor.build.security_patch=2024-10-05
+ro.vendor.soc.manufacturer=Mediatek
+ro.vendor.soc.model=MT6769
+ro.vendor.soc.model.external_name=MT6769V/CZ
+ro.vendor.soc.model.part_name=MT6769V/CZ

@@ -16,9 +16,17 @@ ro.surface_flinger.use_color_management=true
 ro.surface_flinger.protected_contents=true
 ro.vendor.mtk_aal_support=1
 
+# FOSSiBOT
+ro.vendor.build.fingerprint=FOSSiBOT/F106_Pro_ROW/F106_Pro:14/UP1A.231005.007/2024134:user/release-keys
+ro.vendor.build.security_patch=2024-10-05
+ro.vendor.mediatek.platform=MT6768
+ro.vendor.soc.manufacturer=Mediatek
+ro.vendor.soc.model=MT6769
+ro.vendor.soc.model.external_name=MT6769V/CZ
+ro.vendor.soc.model.part_name=MT6769V/CZ
+
 # Storage
 ro.vendor.efuse_writer_enable=1
 
 # Wifi
 ro.vendor.mtk_wapi_support=1
-

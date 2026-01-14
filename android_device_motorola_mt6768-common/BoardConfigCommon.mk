@@ -113,6 +113,7 @@ BOARD_HAS_MTK_HARDWARE := true
 # Properties
 TARGET_SYSTEM_PROP += $(COMMON_PATH)/configs/properties/system.prop
 TARGET_VENDOR_PROP += $(COMMON_PATH)/configs/properties/vendor.prop
+TARGET_VENDOR_PROP += vendor/motorola/mt6768-common/overlay/mt6768-common-vendor.prop
 
 # Recovery
 BOARD_MOVE_RECOVERY_RESOURCES_TO_VENDOR_BOOT := true
