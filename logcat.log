@@ -1,0 +1,730 @@
+-rw-r--r-- 1 root root  60K Jan 13 23:34 dtbo_new.img
+-rw-r--r-- 1 root root 8.0M Jan 13 23:34 real_fossibot/dtbo.img
+-rw-r--r-- 1 root root  64M Jan 13 23:34 real_fossibot/vendor_boot.img
+OK: real_fossibot/vendor_boot.img (67108864 bytes)
+OK: real_fossibot/dtbo.img (8388608 bytes)
+OK: LFS blobs present.
+/workspace/fossi
+?? logcat.log
+android_device_motorola_fogorow
+android_device_motorola_mt6768-common
+android_kernel_alps-5.10
+android_vendor_motorola_fogorow
+android_vendor_motorola_mt6768-common
+device_motorola_fogorow-kernel
+dtbo_new.img
+extract_dtbo.py
+extracted
+logcat.log
+real_fossibot
+scripts
+split_dtbs.py
+64 61186
+bash: command not found: dtc
+Get:2 https://mise.jdx.dev/deb stable InRelease
+Get:3 http://security.ubuntu.com/ubuntu noble-security InRelease
+Hit:4 http://archive.ubuntu.com/ubuntu noble InRelease
+Hit:1 https://apt.llvm.org/noble llvm-toolchain-noble-20 InRelease
+Get:5 http://archive.ubuntu.com/ubuntu noble-updates InRelease
+Get:6 https://mise.jdx.dev/deb stable/main amd64 Packages [363 B]
+Get:7 http://archive.ubuntu.com/ubuntu noble-backports InRelease
+Get:8 http://security.ubuntu.com/ubuntu noble-security/restricted amd64 Packages [2919 kB]
+Get:9 http://archive.ubuntu.com/ubuntu noble-updates/universe amd64 Packages [1955 kB]
+Get:10 http://security.ubuntu.com/ubuntu noble-security/main amd64 Packages [1769 kB]
+Get:11 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 Packages [2141 kB]
+Get:12 http://security.ubuntu.com/ubuntu noble-security/universe amd64 Packages [1188 kB]
+Fetched 10.4 MB in 3s (3071 kB/s)
+Reading package lists...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following additional packages will be installed:
+  libfdt1
+The following NEW packages will be installed:
+  device-tree-compiler libfdt1
+0 upgraded, 2 newly installed, 0 to remove and 3 not upgraded.
+Need to get 248 kB of archives.
+After this operation, 485 kB of additional disk space will be used.
+Get:1 http://archive.ubuntu.com/ubuntu noble/main amd64 libfdt1 amd64 1.7.0-2build1 [20.1 kB]
+Get:2 http://archive.ubuntu.com/ubuntu noble/main amd64 device-tree-compiler amd64 1.7.0-2build1 [228 kB]
+debconf: delaying package configuration, since apt-utils is not installed
+Fetched 248 kB in 1s (242 kB/s)
+Selecting previously unselected package libfdt1:amd64.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 33650 files and directories currently installed.)
+Preparing to unpack .../libfdt1_1.7.0-2build1_amd64.deb ...
+Unpacking libfdt1:amd64 (1.7.0-2build1) ...
+Selecting previously unselected package device-tree-compiler.
+Preparing to unpack .../device-tree-compiler_1.7.0-2build1_amd64.deb ...
+Unpacking device-tree-compiler (1.7.0-2build1) ...
+Setting up libfdt1:amd64 (1.7.0-2build1) ...
+Setting up device-tree-compiler (1.7.0-2build1) ...
+Processing triggers for libc-bin (2.39-0ubuntu8.6) ...
+extracted/dtbo/f106pro_overlay.dts: Warning (reg_format): /fragment@4/__overlay__/chipone_tddi@48:reg: property has invalid length (4 bytes) (#address-cells == 2, #size-cells == 1)
+extracted/dtbo/f106pro_overlay.dts: Warning (reg_format): /fragment@4/__overlay__/jadard@68:reg: property has invalid length (4 bytes) (#address-cells == 2, #size-cells == 1)
+extracted/dtbo/f106pro_overlay.dts: Warning (reg_format): /fragment@4/__overlay__/cap_touch_ilitek@41:reg: property has invalid length (4 bytes) (#address-cells == 2, #size-cells == 1)
+extracted/dtbo/f106pro_overlay.dts: Warning (reg_format): /fragment@4/__overlay__/cap_touch_ft@38:reg: property has invalid length (4 bytes) (#address-cells == 2, #size-cells == 1)
+extracted/dtbo/f106pro_overlay.dts: Warning (reg_format): /fragment@4/__overlay__/cap_touch_elan@10:reg: property has invalid length (4 bytes) (#address-cells == 2, #size-cells == 1)
+extracted/dtbo/f106pro_overlay.dts: Warning (reg_format): /fragment@4/__overlay__/cap_touch_himax@48:reg: property has invalid length (4 bytes) (#address-cells == 2, #size-cells == 1)
+extracted/dtbo/f106pro_overlay.dts: Warning (reg_format): /fragment@4/__overlay__/i2c_lcd_bias@3e:reg: property has invalid length (4 bytes) (#address-cells == 2, #size-cells == 1)
+extracted/dtbo/f106pro_overlay.dts: Warning (reg_format): /fragment@5/__overlay__/mtk-usb@60:reg: property has invalid length (4 bytes) (#address-cells == 2, #size-cells == 1)
+extracted/dtbo/f106pro_overlay.dts: Warning (reg_format): /fragment@6/__overlay__/nu2105_master@65:reg: property has invalid length (4 bytes) (#address-cells == 2, #size-cells == 1)
+extracted/dtbo/f106pro_overlay.dts: Warning (reg_format): /fragment@6/__overlay__/st21nfc@08:reg: property has invalid length (4 bytes) (#address-cells == 2, #size-cells == 1)
+extracted/dtbo/f106pro_overlay.dts: Warning (reg_format): /fragment@7/__overlay__/auxiliarycamera@4c:reg: property has invalid length (4 bytes) (#address-cells == 2, #size-cells == 1)
+extracted/dtbo/f106pro_overlay.dts: Warning (reg_format): /fragment@8/__overlay__/hl1280@42:reg: property has invalid length (4 bytes) (#address-cells == 2, #size-cells == 1)
+extracted/dtbo/f106pro_overlay.dts: Warning (reg_format): /fragment@28/__overlay__/speaker_amp@34:reg: property has invalid length (4 bytes) (#address-cells == 2, #size-cells == 1)
+extracted/dtbo/f106pro_overlay.dts: Warning (reg_format): /fragment@30/__overlay__/tiny_lcd@0:reg: property has invalid length (4 bytes) (#address-cells == 2, #size-cells == 1)
+extracted/dtbo/f106pro_overlay.dts: Warning (unit_address_vs_reg): /fragment@3/__overlay__/led@0: node has a unit name, but no reg or ranges property
+extracted/dtbo/f106pro_overlay.dts: Warning (unit_address_vs_reg): /fragment@3/__overlay__/led@1: node has a unit name, but no reg or ranges property
+extracted/dtbo/f106pro_overlay.dts: Warning (unit_address_vs_reg): /fragment@3/__overlay__/led@2: node has a unit name, but no reg or ranges property
+extracted/dtbo/f106pro_overlay.dts: Warning (unit_address_vs_reg): /fragment@3/__overlay__/led@3: node has a unit name, but no reg or ranges property
+extracted/dtbo/f106pro_overlay.dts: Warning (unit_address_vs_reg): /fragment@3/__overlay__/led@4: node has a unit name, but no reg or ranges property
+extracted/dtbo/f106pro_overlay.dts: Warning (unit_address_vs_reg): /fragment@3/__overlay__/led@5: node has a unit name, but no reg or ranges property
+extracted/dtbo/f106pro_overlay.dts: Warning (unit_address_vs_reg): /fragment@3/__overlay__/led@6: node has a unit name, but no reg or ranges property
+extracted/dtbo/f106pro_overlay.dts: Warning (unit_address_vs_reg): /fragment@3/__overlay__/vibrator@0: node has a unit name, but no reg or ranges property
+extracted/dtbo/f106pro_overlay.dts: Warning (unit_address_vs_reg): /fragment@10/__overlay__/eint1touch@0: node has a unit name, but no reg or ranges property
+extracted/dtbo/f106pro_overlay.dts: Warning (unit_address_vs_reg): /fragment@16/__overlay__/gpslna@0: node has a unit name, but no reg or ranges property
+extracted/dtbo/f106pro_overlay.dts: Warning (unit_address_vs_reg): /fragment@16/__overlay__/gpslna@1: node has a unit name, but no reg or ranges property
+extracted/dtbo/f106pro_overlay.dts: Warning (unit_address_vs_reg): /fragment@16/__overlay__/gpslna@2: node has a unit name, but no reg or ranges property
+extracted/dtbo/f106pro_overlay.dts: Warning (unit_address_vs_reg): /fragment@19/__overlay__/irtx_gpio_led_def@gpio12: node has a unit name, but no reg or ranges property
+extracted/dtbo/f106pro_overlay.dts: Warning (unit_address_vs_reg): /fragment@19/__overlay__/irtx_gpio_led_set@gpio12: node has a unit name, but no reg or ranges property
+extracted/dtbo/f106pro_overlay.dts: Warning (unit_address_vs_reg): /fragment@23/__overlay__/camera0_mclk_2mA@gpio100: node has a unit name, but no reg or ranges property
+extracted/dtbo/f106pro_overlay.dts: Warning (unit_address_vs_reg): /fragment@23/__overlay__/camera0_mclk_4mA@gpio100: node has a unit name, but no reg or ranges property
+extracted/dtbo/f106pro_overlay.dts: Warning (unit_address_vs_reg): /fragment@23/__overlay__/camera0_mclk_6mA@gpio100: node has a unit name, but no reg or ranges property
+extracted/dtbo/f106pro_overlay.dts: Warning (unit_address_vs_reg): /fragment@23/__overlay__/camera0_mclk_8mA@gpio100: node has a unit name, but no reg or ranges property
+extracted/dtbo/f106pro_overlay.dts: Warning (unit_address_vs_reg): /fragment@23/__overlay__/camera0_mclk_gpio_mode@gpio100: node has a unit name, but no reg or ranges property
+extracted/dtbo/f106pro_overlay.dts: Warning (unit_address_vs_reg): /fragment@23/__overlay__/camera1_mclk_2mA@gpio99: node has a unit name, but no reg or ranges property
+extracted/dtbo/f106pro_overlay.dts: Warning (unit_address_vs_reg): /fragment@23/__overlay__/camera1_mclk_4mA@gpio99: node has a unit name, but no reg or ranges property
+extracted/dtbo/f106pro_overlay.dts: Warning (unit_address_vs_reg): /fragment@23/__overlay__/camera1_mclk_6mA@gpio99: node has a unit name, but no reg or ranges property
+extracted/dtbo/f106pro_overlay.dts: Warning (unit_address_vs_reg): /fragment@23/__overlay__/camera1_mclk_8mA@gpio99: node has a unit name, but no reg or ranges property
+extracted/dtbo/f106pro_overlay.dts: Warning (unit_address_vs_reg): /fragment@23/__overlay__/camera1_mclk_gpio_mode@gpio99: node has a unit name, but no reg or ranges property
+extracted/dtbo/f106pro_overlay.dts: Warning (unit_address_vs_reg): /fragment@23/__overlay__/camera2_mclk_2mA@gpio108: node has a unit name, but no reg or ranges property
+extracted/dtbo/f106pro_overlay.dts: Warning (unit_address_vs_reg): /fragment@23/__overlay__/camera2_mclk_4mA@gpio108: node has a unit name, but no reg or ranges property
+extracted/dtbo/f106pro_overlay.dts: Warning (unit_address_vs_reg): /fragment@23/__overlay__/camera2_mclk_6mA@gpio108: node has a unit name, but no reg or ranges property
+extracted/dtbo/f106pro_overlay.dts: Warning (unit_address_vs_reg): /fragment@23/__overlay__/camera2_mclk_8mA@gpio108: node has a unit name, but no reg or ranges property
+extracted/dtbo/f106pro_overlay.dts: Warning (unit_address_vs_reg): /fragment@23/__overlay__/camera2_mclk_gpio_mode@gpio108: node has a unit name, but no reg or ranges property
+extracted/dtbo/f106pro_overlay.dts: Warning (unit_address_vs_reg): /fragment@23/__overlay__/camera3_mclk_2mA@gpio108: node has a unit name, but no reg or ranges property
+extracted/dtbo/f106pro_overlay.dts: Warning (unit_address_vs_reg): /fragment@23/__overlay__/camera3_mclk_4mA@gpio108: node has a unit name, but no reg or ranges property
+extracted/dtbo/f106pro_overlay.dts: Warning (unit_address_vs_reg): /fragment@23/__overlay__/camera3_mclk_6mA@gpio108: node has a unit name, but no reg or ranges property
+extracted/dtbo/f106pro_overlay.dts: Warning (unit_address_vs_reg): /fragment@23/__overlay__/camera3_mclk_8mA@gpio108: node has a unit name, but no reg or ranges property
+extracted/dtbo/f106pro_overlay.dts: Warning (unit_address_vs_reg): /fragment@23/__overlay__/camera3_mclk_gpio_mode@gpio108: node has a unit name, but no reg or ranges property
+extracted/dtbo/f106pro_overlay.dts: Warning (unit_address_vs_reg): /fragment@23/__overlay__/camera0_rst_output_low@gpio102: node has a unit name, but no reg or ranges property
+extracted/dtbo/f106pro_overlay.dts: Warning (unit_address_vs_reg): /fragment@23/__overlay__/camera0_rst_output_high@gpio102: node has a unit name, but no reg or ranges property
+extracted/dtbo/f106pro_overlay.dts: Warning (unit_address_vs_reg): /fragment@23/__overlay__/camera0_pdn_output_low@gpio98: node has a unit name, but no reg or ranges property
+extracted/dtbo/f106pro_overlay.dts: Warning (unit_address_vs_reg): /fragment@23/__overlay__/camera0_pdn_output_high@gpio98: node has a unit name, but no reg or ranges property
+extracted/dtbo/f106pro_overlay.dts: Warning (unit_address_vs_reg): /fragment@23/__overlay__/camera1_rst_output_low@gpio101: node has a unit name, but no reg or ranges property
+extracted/dtbo/f106pro_overlay.dts: Warning (unit_address_vs_reg): /fragment@23/__overlay__/camera1_rst_output_high@gpio101: node has a unit name, but no reg or ranges property
+extracted/dtbo/f106pro_overlay.dts: Warning (unit_address_vs_reg): /fragment@23/__overlay__/camera1_pdn_output_low@gpio97: node has a unit name, but no reg or ranges property
+extracted/dtbo/f106pro_overlay.dts: Warning (unit_address_vs_reg): /fragment@23/__overlay__/camera1_pdn_output_high@gpio97: node has a unit name, but no reg or ranges property
+extracted/dtbo/f106pro_overlay.dts: Warning (unit_address_vs_reg): /fragment@23/__overlay__/camera2_rst_output_low@gpio109: node has a unit name, but no reg or ranges property
+extracted/dtbo/f106pro_overlay.dts: Warning (unit_address_vs_reg): /fragment@23/__overlay__/camera2_rst_output_high@gpio109: node has a unit name, but no reg or ranges property
+extracted/dtbo/f106pro_overlay.dts: Warning (unit_address_vs_reg): /fragment@23/__overlay__/camera2_pdn_output_low@gpio107: node has a unit name, but no reg or ranges property
+extracted/dtbo/f106pro_overlay.dts: Warning (unit_address_vs_reg): /fragment@23/__overlay__/camera2_pdn_output_high@gpio107: node has a unit name, but no reg or ranges property
+extracted/dtbo/f106pro_overlay.dts: Warning (unit_address_vs_reg): /fragment@23/__overlay__/camera3_rst_output_low@gpio109: node has a unit name, but no reg or ranges property
+extracted/dtbo/f106pro_overlay.dts: Warning (unit_address_vs_reg): /fragment@23/__overlay__/camera3_rst_output_high@gpio109: node has a unit name, but no reg or ranges property
+extracted/dtbo/f106pro_overlay.dts: Warning (unit_address_vs_reg): /fragment@23/__overlay__/camera3_pdn_output_low@gpio107: node has a unit name, but no reg or ranges property
+extracted/dtbo/f106pro_overlay.dts: Warning (unit_address_vs_reg): /fragment@23/__overlay__/camera3_pdn_output_high@gpio107: node has a unit name, but no reg or ranges property
+extracted/dtbo/f106pro_overlay.dts: Warning (unit_address_vs_reg): /fragment@23/__overlay__/camera0_vcamd_output_low@gpio178: node has a unit name, but no reg or ranges property
+extracted/dtbo/f106pro_overlay.dts: Warning (unit_address_vs_reg): /fragment@23/__overlay__/camera0_vcamd_output_high@gpio178: node has a unit name, but no reg or ranges property
+extracted/dtbo/f106pro_overlay.dts: Warning (unit_address_vs_reg): /fragment@23/__overlay__/camera1_vcamd_output_low@gpio179: node has a unit name, but no reg or ranges property
+extracted/dtbo/f106pro_overlay.dts: Warning (unit_address_vs_reg): /fragment@23/__overlay__/camera1_vcamd_output_high@gpio179: node has a unit name, but no reg or ranges property
+extracted/dtbo/f106pro_overlay.dts: Warning (unit_address_vs_reg): /fragment@23/__overlay__/camera2_vcamd_output_low@gpio5: node has a unit name, but no reg or ranges property
+extracted/dtbo/f106pro_overlay.dts: Warning (unit_address_vs_reg): /fragment@23/__overlay__/camera2_vcamd_output_high@gpio5: node has a unit name, but no reg or ranges property
+extracted/dtbo/f106pro_overlay.dts: Warning (unit_address_vs_reg): /fragment@23/__overlay__/camera3_vcamd_output_low@gpio0: node has a unit name, but no reg or ranges property
+extracted/dtbo/f106pro_overlay.dts: Warning (unit_address_vs_reg): /fragment@23/__overlay__/camera3_vcamd_output_high@gpio0: node has a unit name, but no reg or ranges property
+extracted/dtbo/f106pro_overlay.dts: Warning (unit_address_vs_reg): /fragment@23/__overlay__/camera0_vcama_output_low@gpio6: node has a unit name, but no reg or ranges property
+extracted/dtbo/f106pro_overlay.dts: Warning (unit_address_vs_reg): /fragment@23/__overlay__/camera0_vcama_output_high@gpio6: node has a unit name, but no reg or ranges property
+extracted/dtbo/f106pro_overlay.dts: Warning (unit_address_vs_reg): /fragment@23/__overlay__/camera1_vcama_output_low@gpio158: node has a unit name, but no reg or ranges property
+extracted/dtbo/f106pro_overlay.dts: Warning (unit_address_vs_reg): /fragment@23/__overlay__/camera1_vcama_output_high@gpio158: node has a unit name, but no reg or ranges property
+extracted/dtbo/f106pro_overlay.dts: Warning (unit_address_vs_reg): /fragment@23/__overlay__/camera2_vcama_output_low@gpio9: node has a unit name, but no reg or ranges property
+extracted/dtbo/f106pro_overlay.dts: Warning (unit_address_vs_reg): /fragment@23/__overlay__/camera2_vcama_output_high@gpio9: node has a unit name, but no reg or ranges property
+extracted/dtbo/f106pro_overlay.dts: Warning (unit_address_vs_reg): /fragment@23/__overlay__/camera3_vcama_output_low@gpio9: node has a unit name, but no reg or ranges property
+extracted/dtbo/f106pro_overlay.dts: Warning (unit_address_vs_reg): /fragment@23/__overlay__/camera3_vcama_output_high@gpio9: node has a unit name, but no reg or ranges property
+extracted/dtbo/f106pro_overlay.dts: Warning (unit_address_vs_reg): /fragment@23/__overlay__/camera_mipi_switch_en_high@gpio151: node has a unit name, but no reg or ranges property
+extracted/dtbo/f106pro_overlay.dts: Warning (unit_address_vs_reg): /fragment@23/__overlay__/camera_mipi_switch_en_low@gpio151: node has a unit name, but no reg or ranges property
+extracted/dtbo/f106pro_overlay.dts: Warning (unit_address_vs_reg): /fragment@23/__overlay__/camera_mipi_switch_sel_high@gpio151: node has a unit name, but no reg or ranges property
+extracted/dtbo/f106pro_overlay.dts: Warning (unit_address_vs_reg): /fragment@23/__overlay__/camera_mipi_switch_sel_low@gpio151: node has a unit name, but no reg or ranges property
+extracted/dtbo/f106pro_overlay.dts: Warning (unit_address_vs_reg): /fragment@23/__overlay__/irled@0: node has a unit name, but no reg or ranges property
+extracted/dtbo/f106pro_overlay.dts: Warning (unit_address_vs_reg): /fragment@23/__overlay__/irled@1: node has a unit name, but no reg or ranges property
+extracted/dtbo/f106pro_overlay.dts: Warning (unit_address_vs_reg): /fragment@23/__overlay__/tochledce@0: node has a unit name, but no reg or ranges property
+extracted/dtbo/f106pro_overlay.dts: Warning (unit_address_vs_reg): /fragment@23/__overlay__/tochledce@1: node has a unit name, but no reg or ranges property
+extracted/dtbo/f106pro_overlay.dts: Warning (unit_address_vs_reg): /fragment@23/__overlay__/tochled@0: node has a unit name, but no reg or ranges property
+extracted/dtbo/f106pro_overlay.dts: Warning (unit_address_vs_reg): /fragment@23/__overlay__/tochled@1: node has a unit name, but no reg or ranges property
+extracted/dtbo/f106pro_overlay.dts: Warning (unit_address_vs_reg): /fragment@32/__overlay__/cam3_pnd0@0: node has a unit name, but no reg or ranges property
+extracted/dtbo/f106pro_overlay.dts: Warning (unit_address_vs_reg): /fragment@32/__overlay__/cam3_pnd1@1: node has a unit name, but no reg or ranges property
+extracted/dtbo/f106pro_overlay.dts: Warning (unit_address_vs_reg): /fragment@35/__overlay__/fingerprint-spi@: node has a reg or ranges property, but no unit name
+extracted/dtbo/f106pro_overlay.dts: Warning (unit_address_vs_reg): /fragment@38/__overlay__/mode_pin@0: node has a unit name, but no reg or ranges property
+extracted/dtbo/f106pro_overlay.dts: Warning (unit_address_vs_reg): /fragment@38/__overlay__/mode_pin@1: node has a unit name, but no reg or ranges property
+extracted/dtbo/f106pro_overlay.dts: Warning (unit_address_vs_reg): /fragment@38/__overlay__/en_pin@0: node has a unit name, but no reg or ranges property
+extracted/dtbo/f106pro_overlay.dts: Warning (unit_address_vs_reg): /fragment@38/__overlay__/en_pin@1: node has a unit name, but no reg or ranges property
+extracted/dtbo/f106pro_overlay.dts: Warning (unit_address_vs_reg): /fragment@40/__overlay__/scl6_pin@gpio89: node has a unit name, but no reg or ranges property
+extracted/dtbo/f106pro_overlay.dts: Warning (unit_address_vs_reg): /fragment@40/__overlay__/sda6_pin@gpio90: node has a unit name, but no reg or ranges property
+extracted/dtbo/f106pro_overlay.dts: Warning (unit_address_vs_reg): /__local_fixups__/fragment@8/__overlay__/hl1280@42: node has a unit name, but no reg or ranges property
+extracted/dtbo/f106pro_overlay.dts: Warning (unit_address_vs_reg): /__local_fixups__/fragment@27/__overlay__/panel1@0: node has a unit name, but no reg or ranges property
+extracted/dtbo/f106pro_overlay.dts: Warning (unit_address_vs_reg): /__local_fixups__/fragment@27/__overlay__/panel2@1: node has a unit name, but no reg or ranges property
+extracted/dtbo/f106pro_overlay.dts: Warning (unit_address_vs_reg): /__local_fixups__/fragment@27/__overlay__/panel3@2: node has a unit name, but no reg or ranges property
+extracted/dtbo/f106pro_overlay.dts: Warning (unit_address_format): /fragment@6/__overlay__/st21nfc@08: unit name should not have leading 0s
+extracted/dtbo/f106pro_overlay.dts: Warning (unit_address_format): /fragment@51/__overlay__/camera_main_af@0c: unit name should not have leading 0s
+extracted/dtbo/f106pro_overlay.dts: Warning (unit_address_format): /fragment@52/__overlay__/nfc@08: unit name should not have leading 0s
+extracted/dtbo/f106pro_overlay.dts: Warning (pci_device_reg): Failed prerequisite 'reg_format'
+extracted/dtbo/f106pro_overlay.dts: Warning (pci_device_bus_num): Failed prerequisite 'reg_format'
+extracted/dtbo/f106pro_overlay.dts: Warning (simple_bus_reg): Failed prerequisite 'reg_format'
+extracted/dtbo/f106pro_overlay.dts: Warning (i2c_bus_reg): Failed prerequisite 'reg_format'
+extracted/dtbo/f106pro_overlay.dts: Warning (spi_bus_reg): Failed prerequisite 'reg_format'
+extracted/dtbo/f106pro_overlay.dts: Warning (avoid_default_addr_size): /fragment@4/__overlay__/chipone_tddi@48: Relying on default #address-cells value
+extracted/dtbo/f106pro_overlay.dts: Warning (avoid_default_addr_size): /fragment@4/__overlay__/chipone_tddi@48: Relying on default #size-cells value
+extracted/dtbo/f106pro_overlay.dts: Warning (avoid_default_addr_size): /fragment@4/__overlay__/jadard@68: Relying on default #address-cells value
+extracted/dtbo/f106pro_overlay.dts: Warning (avoid_default_addr_size): /fragment@4/__overlay__/jadard@68: Relying on default #size-cells value
+extracted/dtbo/f106pro_overlay.dts: Warning (avoid_default_addr_size): /fragment@4/__overlay__/cap_touch_ilitek@41: Relying on default #address-cells value
+extracted/dtbo/f106pro_overlay.dts: Warning (avoid_default_addr_size): /fragment@4/__overlay__/cap_touch_ilitek@41: Relying on default #size-cells value
+extracted/dtbo/f106pro_overlay.dts: Warning (avoid_default_addr_size): /fragment@4/__overlay__/cap_touch_ft@38: Relying on default #address-cells value
+extracted/dtbo/f106pro_overlay.dts: Warning (avoid_default_addr_size): /fragment@4/__overlay__/cap_touch_ft@38: Relying on default #size-cells value
+extracted/dtbo/f106pro_overlay.dts: Warning (avoid_default_addr_size): /fragment@4/__overlay__/cap_touch_elan@10: Relying on default #address-cells value
+extracted/dtbo/f106pro_overlay.dts: Warning (avoid_default_addr_size): /fragment@4/__overlay__/cap_touch_elan@10: Relying on default #size-cells value
+extracted/dtbo/f106pro_overlay.dts: Warning (avoid_default_addr_size): /fragment@4/__overlay__/cap_touch_himax@48: Relying on default #address-cells value
+extracted/dtbo/f106pro_overlay.dts: Warning (avoid_default_addr_size): /fragment@4/__overlay__/cap_touch_himax@48: Relying on default #size-cells value
+extracted/dtbo/f106pro_overlay.dts: Warning (avoid_default_addr_size): /fragment@4/__overlay__/i2c_lcd_bias@3e: Relying on default #address-cells value
+extracted/dtbo/f106pro_overlay.dts: Warning (avoid_default_addr_size): /fragment@4/__overlay__/i2c_lcd_bias@3e: Relying on default #size-cells value
+extracted/dtbo/f106pro_overlay.dts: Warning (avoid_default_addr_size): /fragment@5/__overlay__/mtk-usb@60: Relying on default #address-cells value
+extracted/dtbo/f106pro_overlay.dts: Warning (avoid_default_addr_size): /fragment@5/__overlay__/mtk-usb@60: Relying on default #size-cells value
+extracted/dtbo/f106pro_overlay.dts: Warning (avoid_default_addr_size): /fragment@6/__overlay__/nu2105_master@65: Relying on default #address-cells value
+extracted/dtbo/f106pro_overlay.dts: Warning (avoid_default_addr_size): /fragment@6/__overlay__/nu2105_master@65: Relying on default #size-cells value
+extracted/dtbo/f106pro_overlay.dts: Warning (avoid_default_addr_size): /fragment@6/__overlay__/st21nfc@08: Relying on default #address-cells value
+extracted/dtbo/f106pro_overlay.dts: Warning (avoid_default_addr_size): /fragment@6/__overlay__/st21nfc@08: Relying on default #size-cells value
+extracted/dtbo/f106pro_overlay.dts: Warning (avoid_default_addr_size): /fragment@7/__overlay__/auxiliarycamera@4c: Relying on default #address-cells value
+extracted/dtbo/f106pro_overlay.dts: Warning (avoid_default_addr_size): /fragment@7/__overlay__/auxiliarycamera@4c: Relying on default #size-cells value
+extracted/dtbo/f106pro_overlay.dts: Warning (avoid_default_addr_size): /fragment@8/__overlay__/hl1280@42: Relying on default #address-cells value
+extracted/dtbo/f106pro_overlay.dts: Warning (avoid_default_addr_size): /fragment@8/__overlay__/hl1280@42: Relying on default #size-cells value
+extracted/dtbo/f106pro_overlay.dts: Warning (avoid_default_addr_size): /fragment@28/__overlay__/speaker_amp@34: Relying on default #address-cells value
+extracted/dtbo/f106pro_overlay.dts: Warning (avoid_default_addr_size): /fragment@28/__overlay__/speaker_amp@34: Relying on default #size-cells value
+extracted/dtbo/f106pro_overlay.dts: Warning (avoid_default_addr_size): /fragment@30/__overlay__/tiny_lcd@0: Relying on default #address-cells value
+extracted/dtbo/f106pro_overlay.dts: Warning (avoid_default_addr_size): /fragment@30/__overlay__/tiny_lcd@0: Relying on default #size-cells value
+extracted/dtbo/f106pro_overlay.dts: Warning (avoid_unnecessary_addr_size): Failed prerequisite 'avoid_default_addr_size'
+extracted/dtbo/f106pro_overlay.dts: Warning (unique_unit_address): Failed prerequisite 'avoid_default_addr_size'
+extracted/dtbo/f106pro_overlay.dts: Warning (io_channels_property): /fragment@47/__overlay__: Missing property '#io-channel-cells' in node /fragment@40/__overlay__/sda6_pin@gpio90 or bad phandle (referred from io-channels[1])
+extracted/dtbo/f106pro_overlay.dts: Warning (pwms_property): /fragment@2/__overlay__/backlight:pwms: Could not get phandle node for (cell 2)
+extracted/dtbo/f106pro_overlay.dts: Warning (gpios_property): /fragment@4/__overlay__/chipone_tddi@48: Missing property '#gpio-cells' in node /fragment@23/__overlay__/irled@0 or bad phandle (referred from touch,reset-gpio[1])
+extracted/dtbo/f106pro_overlay.dts: Warning (gpios_property): /fragment@4/__overlay__/chipone_tddi@48: Missing property '#gpio-cells' in node /fragment@40/__overlay__/scl6_pin@gpio89 or bad phandle (referred from touch,irq-gpio[1])
+extracted/dtbo/f106pro_overlay.dts: Warning (gpios_property): /fragment@4/__overlay__/jadard@68: Missing property '#gpio-cells' in node /fragment@40/__overlay__/scl6_pin@gpio89 or bad phandle (referred from jadard,irq-gpio[1])
+extracted/dtbo/f106pro_overlay.dts: Warning (gpios_property): /fragment@4/__overlay__/jadard@68: Missing property '#gpio-cells' in node /fragment@23/__overlay__/irled@0 or bad phandle (referred from jadard,rst-gpio[1])
+extracted/dtbo/f106pro_overlay.dts: Warning (gpios_property): /fragment@4/__overlay__/cap_touch_elan@10: Missing property '#gpio-cells' in node /fragment@40/__overlay__/scl6_pin@gpio89 or bad phandle (referred from int-gpio[1])
+extracted/dtbo/f106pro_overlay.dts: Warning (gpios_property): /fragment@6/__overlay__/nu2105_master@65: Missing property '#gpio-cells' in node /fragment@23/__overlay__/camera1_rst_output_high@gpio101 or bad phandle (referred from nu2105,intr-gpios[1])
+extracted/dtbo/f106pro_overlay.dts: Warning (gpios_property): /fragment@6/__overlay__/st21nfc@08: Missing property '#gpio-cells' in node /fragment@16/__overlay__/gpslna@2 or bad phandle (referred from reset-gpios[1])
+extracted/dtbo/f106pro_overlay.dts: Warning (gpios_property): /fragment@6/__overlay__/st21nfc@08: Missing property '#gpio-cells' in node /fragment@19/__overlay__/irtx_gpio_led_set@gpio12 or bad phandle (referred from irq-gpios[1])
+extracted/dtbo/f106pro_overlay.dts: Warning (gpios_property): /fragment@8/__overlay__/hl1280@42: Missing property '#gpio-cells' in node /fragment@23/__overlay__/camera3_mclk_2mA@gpio108 or bad phandle (referred from fsa4480,hs-det-gpio[1])
+extracted/dtbo/f106pro_overlay.dts: Warning (gpios_property): /fragment@27/__overlay__/panel1@0:lcm_iovcc-gpios: Could not get phandle node for (cell 1)
+extracted/dtbo/f106pro_overlay.dts: Warning (gpios_property): /fragment@27/__overlay__/panel1@0: Missing property '#gpio-cells' in node /fragment@23/__overlay__/irled@0 or bad phandle (referred from tp_rst-gpios[1])
+extracted/dtbo/f106pro_overlay.dts: Warning (gpios_property): /fragment@27/__overlay__/panel1@0: Missing property '#gpio-cells' in node /fragment@23/__overlay__/camera2_vcamd_output_low@gpio5 or bad phandle (referred from reset-gpios[1])
+extracted/dtbo/f106pro_overlay.dts: Warning (gpios_property): /fragment@27/__overlay__/panel2@1:lcm_iovcc-gpios: Could not get phandle node for (cell 1)
+extracted/dtbo/f106pro_overlay.dts: Warning (gpios_property): /fragment@27/__overlay__/panel2@1: Missing property '#gpio-cells' in node /fragment@23/__overlay__/irled@0 or bad phandle (referred from tp_rst-gpios[1])
+extracted/dtbo/f106pro_overlay.dts: Warning (gpios_property): /fragment@27/__overlay__/panel2@1: Missing property '#gpio-cells' in node /fragment@23/__overlay__/camera2_vcamd_output_low@gpio5 or bad phandle (referred from reset-gpios[1])
+extracted/dtbo/f106pro_overlay.dts: Warning (gpios_property): /fragment@27/__overlay__/panel3@2:lcm_iovcc-gpios: Could not get phandle node for (cell 1)
+extracted/dtbo/f106pro_overlay.dts: Warning (gpios_property): /fragment@27/__overlay__/panel3@2: Missing property '#gpio-cells' in node /fragment@23/__overlay__/irled@0 or bad phandle (referred from tp_rst-gpios[1])
+extracted/dtbo/f106pro_overlay.dts: Warning (gpios_property): /fragment@27/__overlay__/panel3@2: Missing property '#gpio-cells' in node /fragment@23/__overlay__/camera2_vcamd_output_low@gpio5 or bad phandle (referred from reset-gpios[1])
+extracted/dtbo/f106pro_overlay.dts: Warning (gpios_property): /fragment@28/__overlay__/speaker_amp@34: Missing property '#gpio-cells' in node /fragment@23/__overlay__/camera1_pdn_output_low@gpio97 or bad phandle (referred from reset-gpio[1])
+extracted/dtbo/f106pro_overlay.dts: Warning (gpios_property): /fragment@28/__overlay__/speaker_amp@34: Missing property '#gpio-cells' in node /fragment@23/__overlay__/camera3_pdn_output_high@gpio107 or bad phandle (referred from irq-gpio[1])
+extracted/dtbo/f106pro_overlay.dts: Warning (gpios_property): /fragment@30/__overlay__/tiny_lcd@0: Missing property '#gpio-cells' in node /fragment@10/__overlay__/eint1touch@0 or bad phandle (referred from tiny_lcd,reset-gpio[1])
+extracted/dtbo/f106pro_overlay.dts: Warning (gpios_property): /fragment@30/__overlay__/tiny_lcd@0: Missing property '#gpio-cells' in node /fragment@23/__overlay__/camera1_rst_output_low@gpio101 or bad phandle (referred from tiny_lcd,dc_ctrl-gpio[1])
+extracted/dtbo/f106pro_overlay.dts: Warning (gpios_property): /fragment@30/__overlay__/tiny_lcd@0:tiny_lcd,en_12v-gpio: Could not get phandle node for (cell 1)
+extracted/dtbo/f106pro_overlay.dts: Warning (gpios_property): /fragment@31/__overlay__/chipone_tddi_spi@48: Missing property '#gpio-cells' in node /fragment@23/__overlay__/irled@0 or bad phandle (referred from touch,rst-gpio[1])
+extracted/dtbo/f106pro_overlay.dts: Warning (gpios_property): /fragment@31/__overlay__/chipone_tddi_spi@48: Missing property '#gpio-cells' in node /fragment@40/__overlay__/scl6_pin@gpio89 or bad phandle (referred from touch,irq-gpio[1])
+extracted/dtbo/f106pro_overlay.dts: Warning (gpios_property): /fragment@35/__overlay__/fingerprint-spi@: Missing property '#gpio-cells' in node /fragment@23/__overlay__/camera2_vcama_output_high@gpio9 or bad phandle (referred from fingerprint,touch-int-gpio[1])
+extracted/dtbo/f106pro_overlay.dts: Warning (gpios_property): /fragment@37/__overlay__: Missing property '#gpio-cells' in node /fragment@23/__overlay__/camera_mipi_switch_en_high@gpio151 or bad phandle (referred from fpreset-gpio[1])
+extracted/dtbo/f106pro_overlay.dts: Warning (gpios_property): /fragment@37/__overlay__: Missing property '#gpio-cells' in node /fragment@23/__overlay__/camera2_vcama_output_high@gpio9 or bad phandle (referred from fpint-gpio[1])
+extracted/dtbo/f106pro_overlay.dts: Warning (gpios_property): /fragment@37/__overlay__: Missing property '#gpio-cells' in node /fragment@23/__overlay__/camera2_vcama_output_low@gpio9 or bad phandle (referred from fppower-gpio[1])
+extracted/dtbo/f106pro_overlay.dts: Warning (gpios_property): /__fixups__:gpio: property size (22) is invalid, expected multiple of 4
+extracted/dtbo/f106pro_overlay.dts: Warning (interrupts_property): /fragment@4/__overlay__/chipone_tddi@48:interrupt-parent: Invalid phandle
+extracted/dtbo/f106pro_overlay.dts: Warning (interrupts_property): /fragment@4/__overlay__/chipone_tddi@48: Missing interrupt-parent
+extracted/dtbo/f106pro_overlay.dts: Warning (interrupts_property): /fragment@4/__overlay__/jadard@68:interrupt-parent: Invalid phandle
+extracted/dtbo/f106pro_overlay.dts: Warning (interrupts_property): /fragment@4/__overlay__/jadard@68: Missing interrupt-parent
+extracted/dtbo/f106pro_overlay.dts: Warning (interrupts_property): /fragment@6/__overlay__/st21nfc@08:interrupt-parent: Invalid phandle
+extracted/dtbo/f106pro_overlay.dts: Warning (interrupts_property): /fragment@6/__overlay__/st21nfc@08: Missing interrupt-parent
+extracted/dtbo/f106pro_overlay.dts: Warning (interrupts_property): /fragment@31/__overlay__/chipone_tddi_spi@48:interrupt-parent: Invalid phandle
+extracted/dtbo/f106pro_overlay.dts: Warning (interrupts_property): /fragment@31/__overlay__/chipone_tddi_spi@48: Missing interrupt-parent
+extracted/dtbo/f106pro_overlay.dts: Warning (interrupts_property): /fragment@37/__overlay__:interrupt-parent: Invalid phandle
+extracted/dtbo/f106pro_overlay.dts: Warning (interrupts_property): /fragment@37/__overlay__: Missing interrupt-parent
+extracted/dtbo/f106pro_overlay.dts: Warning (interrupts_property): /fragment@42/__overlay__:interrupt-parent: Invalid phandle
+extracted/dtbo/f106pro_overlay.dts: Warning (interrupts_property): /fragment@42/__overlay__: Missing interrupt-parent
+extracted/dtbo/f106pro_overlay.dts: Warning (interrupts_property): /fragment@44/__overlay__:interrupt-parent: Invalid phandle
+extracted/dtbo/f106pro_overlay.dts: Warning (interrupts_property): /fragment@44/__overlay__: Missing interrupt-parent
+extracted/dtbo/f106pro_overlay.dts: Warning (interrupts_property): /fragment@60/__overlay__:interrupt-parent: Invalid phandle
+extracted/dtbo/f106pro_overlay.dts: Warning (interrupts_property): /fragment@60/__overlay__: Missing interrupt-parent
+extracted/dtbo/f106pro_overlay.dts: Warning (interrupts_property): /fragment@61/__overlay__:interrupt-parent: Invalid phandle
+extracted/dtbo/f106pro_overlay.dts: Warning (interrupts_property): /fragment@61/__overlay__: Missing interrupt-parent
+extracted/dtbo/f106pro_overlay.dts: Warning (interrupts_property): /fragment@62/__overlay__:interrupt-parent: Invalid phandle
+extracted/dtbo/f106pro_overlay.dts: Warning (interrupts_property): /fragment@62/__overlay__: Missing interrupt-parent
+extracted/dtbo/f106pro_overlay.dts: Warning (interrupts_property): /fragment@63/__overlay__:interrupt-parent: Invalid phandle
+extracted/dtbo/f106pro_overlay.dts: Warning (interrupts_property): /fragment@63/__overlay__: Missing interrupt-parent
+extracted/dtbo/f106pro_overlay.dts: Warning (interrupts_property): /fragment@64/__overlay__:interrupt-parent: Invalid phandle
+extracted/dtbo/f106pro_overlay.dts: Warning (interrupts_property): /fragment@64/__overlay__: Missing interrupt-parent
+extracted/dtbo/f106pro_overlay.dts: Warning (interrupts_property): /fragment@65/__overlay__:interrupt-parent: Invalid phandle
+extracted/dtbo/f106pro_overlay.dts: Warning (interrupts_property): /fragment@65/__overlay__: Missing interrupt-parent
+extracted/dtbo/f106pro_overlay.dts: Warning (interrupts_property): /fragment@66/__overlay__:interrupt-parent: Invalid phandle
+extracted/dtbo/f106pro_overlay.dts: Warning (interrupts_property): /fragment@66/__overlay__: Missing interrupt-parent
+extracted/dtbo/f106pro_overlay.dts: Warning (interrupts_property): /fragment@67/__overlay__:interrupt-parent: Invalid phandle
+extracted/dtbo/f106pro_overlay.dts: Warning (interrupts_property): /fragment@67/__overlay__: Missing interrupt-parent
+extracted/dtbo/f106pro_overlay.dts: Warning (interrupts_property): /fragment@68/__overlay__: Missing interrupt-parent
+extracted/dtbo/f106pro_overlay.dts: Warning (interrupts_property): /fragment@69/__overlay__: Missing interrupt-parent
+extracted/dtbo/f106pro_overlay.dts: Warning (graph_endpoint): /fragment@27/__overlay__/ports/port/endpoint2: graph endpoint node name should be 'endpoint'
+extracted/dtbo/f106pro_overlay.dts: Warning (graph_endpoint): /fragment@27/__overlay__/ports/port/endpoint3: graph endpoint node name should be 'endpoint'
+extracted/dtbo/f106pro_overlay.dts: Warning (graph_endpoint): /__local_fixups__/fragment@27/__overlay__/ports/port/endpoint2: graph endpoint node name should be 'endpoint'
+extracted/dtbo/f106pro_overlay.dts: Warning (graph_endpoint): /__local_fixups__/fragment@27/__overlay__/ports/port/endpoint3: graph endpoint node name should be 'endpoint'
+/workspace/fossi
+?? extracted/dtbo/f106pro_overlay.dtb
+?? extracted/dtbo/f106pro_overlay.dts
+?? logcat.log
+000.dtb
+000.dts
+000_new.dtb
+f106pro_overlay.dtb
+f106pro_overlay.dts
+/workspace/fossi
+ M android_kernel_alps-5.10/arch/arm64/boot/dts/mediatek/Makefile
+?? android_kernel_alps-5.10/arch/arm64/boot/dts/mediatek/fossibot/
+?? extracted/dtbo/f106pro_overlay.dtb
+?? extracted/dtbo/f106pro_overlay.dts
+?? logcat.log
+mt6768-fossibot-f106pro-overlay.dts
+/workspace/fossi
+ M android_kernel_alps-5.10/arch/arm64/boot/dts/mediatek/Makefile
+?? android_kernel_alps-5.10/arch/arm64/boot/dts/mediatek/fossibot/
+?? docs/
+?? extracted/dtbo/f106pro_overlay.dtb
+?? extracted/dtbo/f106pro_overlay.dts
+?? logcat.log
+f106pro_extracted_config.md
+-rw-r--r-- 1 root root  69K Jan 14 00:14 android_kernel_alps-5.10/arch/arm64/boot/dts/mediatek/fossibot/mt6768-fossibot-f106pro-overlay.dts
+-rw-r--r-- 1 root root 1.8K Jan 14 00:15 docs/f106pro_extracted_config.md
+-rw-r--r-- 1 root root  69K Jan 14 00:13 extracted/dtbo/f106pro_overlay.dts
+/workspace/fossi
+ M android_kernel_alps-5.10/arch/arm64/boot/dts/mediatek/Makefile
+?? android_kernel_alps-5.10/arch/arm64/boot/dts/mediatek/fossibot/
+?? docs/
+?? extracted/dtbo/f106pro_overlay.dtb
+?? extracted/dtbo/f106pro_overlay.dts
+?? logcat.log
+android_kernel_alps-5.10/arch/arm64/boot/dts/mediatek/fossibot:
+mt6768-fossibot-f106pro-overlay.dts
+
+docs:
+f106pro_extracted_config.md
+
+extracted/dtbo:
+000.dtb
+000.dts
+000_new.dtb
+f106pro_overlay.dtb
+f106pro_overlay.dts
+[work 521906dd1] Add
+ 5 files changed, 6005 insertions(+)
+ create mode 100644 android_kernel_alps-5.10/arch/arm64/boot/dts/mediatek/fossibot/mt6768-fossibot-f106pro-overlay.dts
+ create mode 100644 docs/f106pro_extracted_config.md
+ create mode 100644 extracted/dtbo/f106pro_overlay.dts
+ create mode 100644 logcat.log
+ M logcat.log
+?? extracted/dtbo/f106pro_overlay.dtb
+     1	# F106 Pro extracted config summary
+     2	
+     3	Source directory: real_fossibot/.
+     4	
+     5	| File | Size (bytes) | SHA-256 |
+     6	| --- | ---: | --- |
+     7	| MT6768_Android_scatter.txt | 20848 | 902fb3df0775970ca6e856e838ad97af04e8bac6e398d41f7c495e472f1720f4 |
+     8	| boot.img | 33554432 | e4bf3e95eff705e8142fadb76c88a987484847fb80450a0b1f9fd990f8171f6f |
+     9	| ce92639c-0592-4e49-85d5-0add084ac777.pdf | 119120 | ed39534a70410cc633b8a9b1d1c7bf9fd0c609acfcc2a56b5602b7dfd4fb15c3 |
+    10	| defconfig | 181406 | 59b3b3bc1ad1b87718c727796d454455d720a8a56462bc228945bd3f45936c4d |
+    11	| dtbo.img | 8388608 | 8cd9ad18ac4281771852d0e6a973f96c102d364a0d763d97921046fed1e28a03 |
+    12	| fossibotf106pro.html | 35880 | 91e6550f1ee6b762a1b2335745245bbab443730f47ac5413bfec220763ad8407 |
+    13	| fstab.mt6768 | 3796 | 24552999a91e3af83b2b1927719d7c1bcd358be45b6cb2ce2fc93f4cdbc8913c |
+    14	| getvar_all.txt | 3242 | 556f31c9ca769d06195fd9afe140a989b58ea485eed6bb19651c9eb8f0f68c02 |
+    15	| init_boot.img | 8388608 | 2daeb1f36095b44b318410b3f4e8b5d989dcc7bb023d1426c492dab0a3053e74 |
+    16	| lpdump_super.txt | 1906 | 20067d1622a27d66d960f9bcb7272e85cc4c4d1a561ddac600e1e331e8fbd620 |
+    17	| odm_selinux.tar | 1024 | 5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef |
+    18	| props.txt | 51137 | d20519e436b2f0264ba7c28804af568e78023ee5d3589f5b91045a2735172210 |
+    19	| selinux.policy | 1167091 | e3fbb3a635415234651a9639334161eeea4ac6756c445a634c583d3abbbae1b7 |
+    20	| system_selinux.tar | 3245056 | 2507b461decf01cfa05feb82875b48aabc754f3cfe0995fbeacb773fa6e68315 |
+    21	| vendor.img | 502185984 | 9a515349209ba9f9824b73312c7b37df71aa0afb79f721c224ecd931567f4f78 |
+    22	| vendor_boot.img | 67108864 | 45245069a03053924f93b8f61c41ecd6fb815b633283ae2a8e2254aed4d942da |
+    23	| vendor_selinux.tar | 3239424 | 11f28697bb5c3e64bd0bf86270d2551ac3a543da8547f068faf4bf50cceb7089 |
+     1	/dts-v1/;
+     2	
+     3	/ {
+     4	
+     5		fragment@0 {
+     6			target = <0xffffffff>;
+     7	
+     8			__overlay__ {
+     9	
+    10				reserve-memory-scp_share {
+    11					compatible = "mediatek,reserve-memory-scp_share";
+    12					no-map;
+    13					size = <0x00 0xd00000>;
+    14					alignment = <0x00 0x1000000>;
+    15					alloc-ranges = <0x00 0x40000000 0x00 0x50000000>;
+    16				};
+    17			};
+    18		};
+    19	
+    20		fragment@1 {
+    21			target = <0xffffffff>;
+    22	
+    23			__overlay__ {
+    24				atag,videolfb-fb_base_l = "~`P";
+    25				atag,videolfb-fb_base_h = <0x00>;
+    26				atag,videolfb-islcmfound = <0x01>;
+    27				atag,videolfb-islcm_inited = <0x00>;
+    28				atag,videolfb-fps = <0x1770>;
+    29				atag,videolfb-vramSize = <0x17e8000>;
+    30				atag,videolfb-lcmname = "icnl9922c_dsi_vdo_fhdp_sarp_lcm_drv\0hi8559_dsi_vdo_fhdp_sarp_lcm_drv\0ili7807_dsi_vdo_fhdp_sarp_lcm_drv";
+    31			};
+    32		};
+    33	
+    34		fragment@2 {
+    35			target = <0xffffffff>;
+    36	
+    37			__overlay__ {
+    38				compatible = "mediatek,pwm-leds";
+    39	
+    40				backlight {
+    41					led_mode = <0x05>;
+    42					pwms = <0xffffffff 0x00 0x99d9>;
+    43					pwm-names = "lcd-backlight";
+    44					pwm_config = <0x00 0x03 0x00 0x00 0x00>;
+    45				};
+    46			};
+    47		};
+    48	
+    49		fragment@3 {
+    50			target = <0xffffffff>;
+    51	
+    52			__overlay__ {
+    53	
+    54				led@0 {
+    55					compatible = "mediatek,red";
+    56					led_mode = <0x00>;
+    57					data = <0x01>;
+    58					pwm_config = <0x00 0x00 0x00 0x00 0x00>;
+    59					phandle = <0x72>;
+    60				};
+    61	
+    62				led@1 {
+    63					compatible = "mediatek,green";
+    64					led_mode = <0x00>;
+    65					data = <0x01>;
+    66					pwm_config = <0x00 0x00 0x00 0x00 0x00>;
+    67					phandle = <0x73>;
+    68				};
+    69	
+    70				led@2 {
+    71					compatible = "mediatek,blue";
+    72					led_mode = <0x00>;
+    73					data = <0x01>;
+    74					pwm_config = <0x00 0x00 0x00 0x00 0x00>;
+    75					phandle = <0x74>;
+    76				};
+    77	
+    78				led@3 {
+    79					compatible = "mediatek,jogball-backlight";
+    80					led_mode = <0x00>;
+    81					data = <0x01>;
+    82					pwm_config = <0x00 0x00 0x00 0x00 0x00>;
+    83					phandle = <0x75>;
+    84				};
+    85	
+    86				led@4 {
+    87					compatible = "mediatek,keyboard-backlight";
+    88					led_mode = <0x00>;
+    89					data = <0x01>;
+    90					pwm_config = <0x00 0x00 0x00 0x00 0x00>;
+    91					phandle = <0x76>;
+    92				};
+    93	
+    94				led@5 {
+    95					compatible = "mediatek,button-backlight";
+    96					led_mode = <0x00>;
+    97					data = <0x01>;
+    98					pwm_config = <0x00 0x00 0x00 0x00 0x00>;
+    99					phandle = <0x77>;
+   100				};
+   101	
+   102				led@6 {
+   103					compatible = "mediatek,lcd-backlight";
+   104					led_mode = <0x05>;
+   105					data = <0x01>;
+   106					pwm_config = <0x00 0x03 0x00 0x00 0x00>;
+   107					phandle = <0x78>;
+   108				};
+   109	
+   110				vibrator@0 {
+   111					compatible = "mediatek,vibrator";
+   112					vib_timer = <0x19>;
+   113					vib_limit = <0x09>;
+   114					vib_vol = <0x09>;
+   115					phandle = <0x79>;
+   116				};
+   117			};
+   118		};
+   119	
+   120		fragment@4 {
+   121			target = <0xffffffff>;
+   122	
+   123			__overlay__ {
+   124				clock-frequency = <0x61a80>;
+   125	
+   126				chipone_tddi@48 {
+   127					compatible = "touch,spi";
+   128					reg = <0x48>;
+   129					interrupt-parent = <0xffffffff>;
+   130					interrupts = <0x01 0x2008>;
+   131					touch,reset-gpio = <0xffffffff 0x50 0x00>;
+   132					touch,irq-gpio = <0xffffffff 0x01 0x00>;
+   133					touch,x-res = <0x438>;
+   134					touch,y-res = <0x968>;
+   135					status = "okay";
+   136				};
+   137	
+   138				jadard@68 {
+   139					compatible = "jadard,jdcommon";
+   140					reg = <0x68>;
+   141					status = "okay";
+   142					interrupt-parent = <0xffffffff>;
+   143					interrupts = <0x01 0x2008>;
+   144					jadard,panel-coords = <0x00 0x438 0x00 0x968>;
+   145					jadard,panel-max-points = <0x0a>;
+   146					jadard,int-is-edge = <0x01>;
+   147					jadard,irq-gpio = <0xffffffff 0x01 0x00>;
+   148					jadard,rst-gpio = <0xffffffff 0x50 0x00>;
+   149				};
+   150	
+   151				cap_touch_ilitek@41 {
+   152					compatible = "mediatek,cap_touch_ilitek";
+   153					reg = <0x41>;
+   154					status = "okay";
+   155				};
+   156	
+   157				cap_touch_ft@38 {
+   158					compatible = "mediatek,cap_touch_ft";
+   159					reg = <0x38>;
+   160				};
+     1	/dts-v1/;
+     2	
+     3	/ {
+     4	
+     5		fragment@0 {
+     6			target = <0xffffffff>;
+     7	
+     8			__overlay__ {
+     9	
+    10				reserve-memory-scp_share {
+    11					compatible = "mediatek,reserve-memory-scp_share";
+    12					no-map;
+    13					size = <0x00 0xd00000>;
+    14					alignment = <0x00 0x1000000>;
+    15					alloc-ranges = <0x00 0x40000000 0x00 0x50000000>;
+    16				};
+    17			};
+    18		};
+    19	
+    20		fragment@1 {
+    21			target = <0xffffffff>;
+    22	
+    23			__overlay__ {
+    24				atag,videolfb-fb_base_l = "~`P";
+    25				atag,videolfb-fb_base_h = <0x00>;
+    26				atag,videolfb-islcmfound = <0x01>;
+    27				atag,videolfb-islcm_inited = <0x00>;
+    28				atag,videolfb-fps = <0x1770>;
+    29				atag,videolfb-vramSize = <0x17e8000>;
+    30				atag,videolfb-lcmname = "icnl9922c_dsi_vdo_fhdp_sarp_lcm_drv\0hi8559_dsi_vdo_fhdp_sarp_lcm_drv\0ili7807_dsi_vdo_fhdp_sarp_lcm_drv";
+    31			};
+    32		};
+    33	
+    34		fragment@2 {
+    35			target = <0xffffffff>;
+    36	
+    37			__overlay__ {
+    38				compatible = "mediatek,pwm-leds";
+    39	
+    40				backlight {
+    41					led_mode = <0x05>;
+    42					pwms = <0xffffffff 0x00 0x99d9>;
+    43					pwm-names = "lcd-backlight";
+    44					pwm_config = <0x00 0x03 0x00 0x00 0x00>;
+    45				};
+    46			};
+    47		};
+    48	
+    49		fragment@3 {
+    50			target = <0xffffffff>;
+    51	
+    52			__overlay__ {
+    53	
+    54				led@0 {
+    55					compatible = "mediatek,red";
+    56					led_mode = <0x00>;
+    57					data = <0x01>;
+    58					pwm_config = <0x00 0x00 0x00 0x00 0x00>;
+    59					phandle = <0x72>;
+    60				};
+    61	
+    62				led@1 {
+    63					compatible = "mediatek,green";
+    64					led_mode = <0x00>;
+    65					data = <0x01>;
+    66					pwm_config = <0x00 0x00 0x00 0x00 0x00>;
+    67					phandle = <0x73>;
+    68				};
+    69	
+    70				led@2 {
+    71					compatible = "mediatek,blue";
+    72					led_mode = <0x00>;
+    73					data = <0x01>;
+    74					pwm_config = <0x00 0x00 0x00 0x00 0x00>;
+    75					phandle = <0x74>;
+    76				};
+    77	
+    78				led@3 {
+    79					compatible = "mediatek,jogball-backlight";
+    80					led_mode = <0x00>;
+    81					data = <0x01>;
+    82					pwm_config = <0x00 0x00 0x00 0x00 0x00>;
+    83					phandle = <0x75>;
+    84				};
+    85	
+    86				led@4 {
+    87					compatible = "mediatek,keyboard-backlight";
+    88					led_mode = <0x00>;
+    89					data = <0x01>;
+    90					pwm_config = <0x00 0x00 0x00 0x00 0x00>;
+    91					phandle = <0x76>;
+    92				};
+    93	
+    94				led@5 {
+    95					compatible = "mediatek,button-backlight";
+    96					led_mode = <0x00>;
+    97					data = <0x01>;
+    98					pwm_config = <0x00 0x00 0x00 0x00 0x00>;
+    99					phandle = <0x77>;
+   100				};
+   101	
+   102				led@6 {
+   103					compatible = "mediatek,lcd-backlight";
+   104					led_mode = <0x05>;
+   105					data = <0x01>;
+   106					pwm_config = <0x00 0x03 0x00 0x00 0x00>;
+   107					phandle = <0x78>;
+   108				};
+   109	
+   110				vibrator@0 {
+   111					compatible = "mediatek,vibrator";
+   112					vib_timer = <0x19>;
+   113					vib_limit = <0x09>;
+   114					vib_vol = <0x09>;
+   115					phandle = <0x79>;
+   116				};
+   117			};
+   118		};
+   119	
+   120		fragment@4 {
+   121			target = <0xffffffff>;
+   122	
+   123			__overlay__ {
+   124				clock-frequency = <0x61a80>;
+   125	
+   126				chipone_tddi@48 {
+   127					compatible = "touch,spi";
+   128					reg = <0x48>;
+   129					interrupt-parent = <0xffffffff>;
+   130					interrupts = <0x01 0x2008>;
+   131					touch,reset-gpio = <0xffffffff 0x50 0x00>;
+   132					touch,irq-gpio = <0xffffffff 0x01 0x00>;
+   133					touch,x-res = <0x438>;
+   134					touch,y-res = <0x968>;
+   135					status = "okay";
+   136				};
+   137	
+   138				jadard@68 {
+   139					compatible = "jadard,jdcommon";
+   140					reg = <0x68>;
+   141					status = "okay";
+   142					interrupt-parent = <0xffffffff>;
+   143					interrupts = <0x01 0x2008>;
+   144					jadard,panel-coords = <0x00 0x438 0x00 0x968>;
+   145					jadard,panel-max-points = <0x0a>;
+   146					jadard,int-is-edge = <0x01>;
+   147					jadard,irq-gpio = <0xffffffff 0x01 0x00>;
+   148					jadard,rst-gpio = <0xffffffff 0x50 0x00>;
+   149				};
+   150	
+   151				cap_touch_ilitek@41 {
+   152					compatible = "mediatek,cap_touch_ilitek";
+   153					reg = <0x41>;
+   154					status = "okay";
+   155				};
+   156	
+   157				cap_touch_ft@38 {
+   158					compatible = "mediatek,cap_touch_ft";
+   159					reg = <0x38>;
+   160				};
+     1	# SPDX-License-Identifier: GPL-2.0
+     2	dtb-$(CONFIG_ARCH_MEDIATEK) += mt2712-evb.dtb
+     3	dtb-$(CONFIG_ARCH_MEDIATEK) += mt6755-evb.dtb
+     4	dtb-$(CONFIG_ARCH_MEDIATEK) += mt6795-evb.dtb
+     5	dtb-$(CONFIG_ARCH_MEDIATEK) += mt6797-evb.dtb
+     6	dtb-$(CONFIG_ARCH_MEDIATEK) += mt6797-x20-dev.dtb
+     7	dtb-$(CONFIG_ARCH_MEDIATEK) += mt6873-evb.dtb
+     8	dtb-$(CONFIG_ARCH_MEDIATEK) += mt7622-rfb1.dtb
+     9	dtb-$(CONFIG_ARCH_MEDIATEK) += mt7622-bananapi-bpi-r64.dtb
+    10	dtb-$(CONFIG_ARCH_MEDIATEK) += mt8173-elm.dtb
+    11	dtb-$(CONFIG_ARCH_MEDIATEK) += mt8173-elm-hana.dtb
+    12	dtb-$(CONFIG_ARCH_MEDIATEK) += mt8173-elm-hana-rev7.dtb
+    13	dtb-$(CONFIG_ARCH_MEDIATEK) += mt8173-evb.dtb
+    14	dtb-$(CONFIG_ARCH_MEDIATEK) += mt8183-evb.dtb
+    15	dtb-$(CONFIG_ARCH_MEDIATEK) += mt8183-kukui-krane-sku176.dtb
+    16	dtb-$(CONFIG_ARCH_MEDIATEK) += mt8516-pumpkin.dtb
+    17	dtb- += fossibot/mt6768-fossibot-f106pro-overlay.dtb
+    18	dtb-$(CONFIG_ARCH_MEDIATEK) += fossibot/mt6768-fossibot-f106pro-overlay.dtb
+<stdin>:3: SyntaxWarning: invalid escape sequence '\ '
+     1	# SPDX-License-Identifier: GPL-2.0
+     2	dtb-$(CONFIG_ARCH_MEDIATEK) += mt2712-evb.dtb
+     3	dtb-$(CONFIG_ARCH_MEDIATEK) += mt6755-evb.dtb
+     4	dtb-$(CONFIG_ARCH_MEDIATEK) += mt6795-evb.dtb
+     5	dtb-$(CONFIG_ARCH_MEDIATEK) += mt6797-evb.dtb
+     6	dtb-$(CONFIG_ARCH_MEDIATEK) += mt6797-x20-dev.dtb
+     7	dtb-$(CONFIG_ARCH_MEDIATEK) += mt6873-evb.dtb
+     8	dtb-$(CONFIG_ARCH_MEDIATEK) += mt7622-rfb1.dtb
+     9	dtb-$(CONFIG_ARCH_MEDIATEK) += mt7622-bananapi-bpi-r64.dtb
+    10	dtb-$(CONFIG_ARCH_MEDIATEK) += mt8173-elm.dtb
+    11	dtb-$(CONFIG_ARCH_MEDIATEK) += mt8173-elm-hana.dtb
+    12	dtb-$(CONFIG_ARCH_MEDIATEK) += mt8173-elm-hana-rev7.dtb
+    13	dtb-$(CONFIG_ARCH_MEDIATEK) += mt8173-evb.dtb
+    14	dtb-$(CONFIG_ARCH_MEDIATEK) += mt8183-evb.dtb
+    15	dtb-$(CONFIG_ARCH_MEDIATEK) += mt8183-kukui-krane-sku176.dtb
+    16	dtb-$(CONFIG_ARCH_MEDIATEK) += mt8516-pumpkin.dtb
+    17	dtb-$(CONFIG_ARCH_MEDIATEK) += fossibot/mt6768-fossibot-f106pro-overlay.dtb
+    18	dtb-\ += fossibot/mt6768-fossibot-f106pro-overlay.dtb
+     1	# SPDX-License-Identifier: GPL-2.0
+     2	dtb-$(CONFIG_ARCH_MEDIATEK) += mt2712-evb.dtb
+     3	dtb-$(CONFIG_ARCH_MEDIATEK) += mt6755-evb.dtb
+     4	dtb-$(CONFIG_ARCH_MEDIATEK) += mt6795-evb.dtb
+     5	dtb-$(CONFIG_ARCH_MEDIATEK) += mt6797-evb.dtb
+     6	dtb-$(CONFIG_ARCH_MEDIATEK) += mt6797-x20-dev.dtb
+     7	dtb-$(CONFIG_ARCH_MEDIATEK) += mt6873-evb.dtb
+     8	dtb-$(CONFIG_ARCH_MEDIATEK) += mt7622-rfb1.dtb
+     9	dtb-$(CONFIG_ARCH_MEDIATEK) += mt7622-bananapi-bpi-r64.dtb
+    10	dtb-$(CONFIG_ARCH_MEDIATEK) += mt8173-elm.dtb
+    11	dtb-$(CONFIG_ARCH_MEDIATEK) += mt8173-elm-hana.dtb
+    12	dtb-$(CONFIG_ARCH_MEDIATEK) += mt8173-elm-hana-rev7.dtb
+    13	dtb-$(CONFIG_ARCH_MEDIATEK) += mt8173-evb.dtb
+    14	dtb-$(CONFIG_ARCH_MEDIATEK) += mt8183-evb.dtb
+    15	dtb-$(CONFIG_ARCH_MEDIATEK) += mt8183-kukui-krane-sku176.dtb
+    16	dtb-$(CONFIG_ARCH_MEDIATEK) += mt8516-pumpkin.dtb
+    17	dtb-$(CONFIG_ARCH_MEDIATEK) += fossibot/mt6768-fossibot-f106pro-overlay.dtb
+[work 8bb09597a] Add
+ Date: Wed Jan 14 00:16:08 2026 +0000
+ 5 files changed, 6409 insertions(+)
+ create mode 100644 android_kernel_alps-5.10/arch/arm64/boot/dts/mediatek/fossibot/mt6768-fossibot-f106pro-overlay.dts
+ create mode 100644 docs/f106pro_extracted_config.md
+ create mode 100644 extracted/dtbo/f106pro_overlay.dts
+ create mode 100644 logcat.log
+ M logcat.log
+?? extracted/dtbo/f106pro_overlay.dtb
