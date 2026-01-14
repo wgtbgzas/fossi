@@ -1,0 +1,71 @@
+# FOSSiBOT F106 Pro partition notes
+
+## Scatter summary
+Source: MT6768_Android_scatter.txt
+
+| Partition | Size (hex) | Linear start | Physical start | Storage |
+| --- | --- | --- | --- | --- |
+| - | - | - | - | EMMC |
+| preloader | 0x40000 | 0x0 | 0x0 | HW_STORAGE_EMMC |
+| pgpt | 0x8000 | 0x0 | 0x0 | HW_STORAGE_EMMC |
+| misc | 0x80000 | 0x8000 | 0x8000 | HW_STORAGE_EMMC |
+| para | 0x80000 | 0x88000 | 0x88000 | HW_STORAGE_EMMC |
+| expdb | 0x1400000 | 0x108000 | 0x108000 | HW_STORAGE_EMMC |
+| frp | 0x100000 | 0x1508000 | 0x1508000 | HW_STORAGE_EMMC |
+| vbmeta_a | 0x800000 | 0x1608000 | 0x1608000 | HW_STORAGE_EMMC |
+| vbmeta_system_a | 0x800000 | 0x1E08000 | 0x1E08000 | HW_STORAGE_EMMC |
+| vbmeta_vendor_a | 0x800000 | 0x2608000 | 0x2608000 | HW_STORAGE_EMMC |
+| vbmeta_b | 0x800000 | 0x2E08000 | 0x2E08000 | HW_STORAGE_EMMC |
+| vbmeta_system_b | 0x800000 | 0x3608000 | 0x3608000 | HW_STORAGE_EMMC |
+| vbmeta_vendor_b | 0x800000 | 0x3E08000 | 0x3E08000 | HW_STORAGE_EMMC |
+| md_udc | 0x169A000 | 0x4608000 | 0x4608000 | HW_STORAGE_EMMC |
+| metadata | 0x2000000 | 0x5CA2000 | 0x5CA2000 | HW_STORAGE_EMMC |
+| nvcfg | 0x2000000 | 0x7CA2000 | 0x7CA2000 | HW_STORAGE_EMMC |
+| nvdata | 0x4000000 | 0x9CA2000 | 0x9CA2000 | HW_STORAGE_EMMC |
+| persist | 0x3000000 | 0xDCA2000 | 0xDCA2000 | HW_STORAGE_EMMC |
+| protect1 | 0x800000 | 0x10CA2000 | 0x10CA2000 | HW_STORAGE_EMMC |
+| protect2 | 0xB5E000 | 0x114A2000 | 0x114A2000 | HW_STORAGE_EMMC |
+| seccfg | 0x800000 | 0x12000000 | 0x12000000 | HW_STORAGE_EMMC |
+| md1img_a | 0x8000000 | 0x12800000 | 0x12800000 | HW_STORAGE_EMMC |
+| spmfw_a | 0x100000 | 0x1A800000 | 0x1A800000 | HW_STORAGE_EMMC |
+| scp_a | 0x600000 | 0x1A900000 | 0x1A900000 | HW_STORAGE_EMMC |
+| sspm_a | 0x100000 | 0x1AF00000 | 0x1AF00000 | HW_STORAGE_EMMC |
+| gz_a | 0x1000000 | 0x1B000000 | 0x1B000000 | HW_STORAGE_EMMC |
+| lk_a | 0x200000 | 0x1C000000 | 0x1C000000 | HW_STORAGE_EMMC |
+| boot_a | 0x2000000 | 0x1C200000 | 0x1C200000 | HW_STORAGE_EMMC |
+| vendor_boot_a | 0x4000000 | 0x1E200000 | 0x1E200000 | HW_STORAGE_EMMC |
+| init_boot_a | 0x800000 | 0x22200000 | 0x22200000 | HW_STORAGE_EMMC |
+| dtbo_a | 0x800000 | 0x22A00000 | 0x22A00000 | HW_STORAGE_EMMC |
+| tee_a | 0x600000 | 0x23200000 | 0x23200000 | HW_STORAGE_EMMC |
+| sec1 | 0x200000 | 0x23800000 | 0x23800000 | HW_STORAGE_EMMC |
+| proinfo | 0x300000 | 0x23A00000 | 0x23A00000 | HW_STORAGE_EMMC |
+| boot_para | 0x1A00000 | 0x23D00000 | 0x23D00000 | HW_STORAGE_EMMC |
+| nvram | 0x4000000 | 0x25700000 | 0x25700000 | HW_STORAGE_EMMC |
+| logo | 0x900000 | 0x29700000 | 0x29700000 | HW_STORAGE_EMMC |
+| md1img_b | 0x8000000 | 0x2A000000 | 0x2A000000 | HW_STORAGE_EMMC |
+| spmfw_b | 0x100000 | 0x32000000 | 0x32000000 | HW_STORAGE_EMMC |
+| scp_b | 0x600000 | 0x32100000 | 0x32100000 | HW_STORAGE_EMMC |
+| sspm_b | 0x100000 | 0x32700000 | 0x32700000 | HW_STORAGE_EMMC |
+| gz_b | 0x1000000 | 0x32800000 | 0x32800000 | HW_STORAGE_EMMC |
+| lk_b | 0x200000 | 0x33800000 | 0x33800000 | HW_STORAGE_EMMC |
+| boot_b | 0x2000000 | 0x33A00000 | 0x33A00000 | HW_STORAGE_EMMC |
+| vendor_boot_b | 0x4000000 | 0x35A00000 | 0x35A00000 | HW_STORAGE_EMMC |
+| init_boot_b | 0x800000 | 0x39A00000 | 0x39A00000 | HW_STORAGE_EMMC |
+| dtbo_b | 0x800000 | 0x3A200000 | 0x3A200000 | HW_STORAGE_EMMC |
+| tee_b | 0x600000 | 0x3AA00000 | 0x3AA00000 | HW_STORAGE_EMMC |
+| super | 0x200000000 | 0x3B000000 | 0x3B000000 | HW_STORAGE_EMMC |
+| userdata | 0x37FF4F8000 | 0x23B000000 | 0x23B000000 | HW_STORAGE_EMMC |
+| otp | 0x2B00000 | 0xFFFF01d8 | 0xFFFF01d8 | HW_STORAGE_EMMC |
+| flashinfo | 0x1000000 | 0xFFFF0080 | 0xFFFF0080 | HW_STORAGE_EMMC |
+| sgpt | 0x8000 | 0xFFFF0000 | 0xFFFF0000 | HW_STORAGE_EMMC |
+
+## Dynamic partitions (lpdump)
+Source: lpdump_super.txt
+
+* Super name: -
+* Super size: -
+* Metadata size: 1000 bytes
+* Metadata slots: -
+
+| Logical partition | Size | Group | Attributes |
+| --- | --- | --- | --- |

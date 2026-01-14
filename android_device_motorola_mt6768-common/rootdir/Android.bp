@@ -80,3 +80,17 @@ prebuilt_etc {
     src: "etc/fstab.mt6768",
     vendor: true,
 }
+
+prebuilt_etc {
+    name: "fstab.enableswap",
+    src: "etc/fstab.enableswap",
+    vendor: true,
+}
+
+// ueventd
+prebuilt_etc {
+    name: "ueventd.mt6768.rc",
+    src: "etc/ueventd.mt6768.rc",
+    filename: "ueventd.rc",
+    vendor: true,
+}

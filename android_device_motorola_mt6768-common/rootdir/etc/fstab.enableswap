@@ -1,0 +1,2 @@
+# Extracted from vendor/etc/fstab.enableswap
+/dev/block/zram0 none swap defaults zramsize=55%

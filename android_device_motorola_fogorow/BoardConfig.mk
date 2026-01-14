@@ -44,6 +44,7 @@ DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/configs/vintf/manifest.xml
 # Properties
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/configs/properties/system.prop
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/configs/properties/vendor.prop
+TARGET_VENDOR_PROP += vendor/motorola/fogorow/overlay/f106pro-vendor.prop
 
 # SKU
 ODM_MANIFEST_SKUS += nfc_ss nonfc_ss nonfc_dsds nfc_dsds

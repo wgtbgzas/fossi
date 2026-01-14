@@ -1,0 +1,15 @@
+# build output
+out/
+out/extract/
+out/logs/
+
+# extracted binaries
+extracted/**/*.dtb
+extracted/**/*.img
+
+# avoid committing binaries
+**/*.dtb
+**/*.img
+
+# logs
+logcat.log

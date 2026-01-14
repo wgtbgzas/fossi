@@ -8,6 +8,16 @@ persist.bluetooth.lhdc_codec.enabled=true
 # FOSSiBOT
 ro.product.board=g2306dmd_v1_gc_qc_f06pro_k5_u
 ro.product.display=F106 Pro
+ro.build.display.id=FOSSiBOT_F106_Pro_F_V08_20241022
+ro.build.fingerprint=FOSSiBOT/F106_Pro_ROW/F106_Pro:14/UP1A.231005.007/2024134:user/release-keys
+ro.build.version.security_patch=2024-10-05
+ro.product.brand=FOSSiBOT
+ro.product.device=F106_Pro
+ro.product.manufacturer=FOSSiBOT
+ro.product.model=F106 Pro
+ro.product.name=F106_Pro_ROW
+ro.product.locale=en-US
+ro.sf.lcd_density=480
 ro.setupwizard.rotation_locked=true
 
 # Wifi

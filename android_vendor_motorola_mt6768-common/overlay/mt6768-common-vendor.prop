@@ -1,0 +1,3 @@
+# MT6768 common vendor properties (from real_fossibot/props.txt)
+ro.vendor.api_level=30
+ro.vendor.mediatek.platform=MT6768
